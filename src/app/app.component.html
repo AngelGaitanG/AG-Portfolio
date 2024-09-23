@@ -1,8 +1,8 @@
 <div class="root">
-    <header>
-        <app-header></app-header>
+    <header *ngIf="!isHomeActive">
+        <app-header (homeActiveEvent)="onHomeActiveChange($event)"></app-header>
     </header>
-    <main>
+    <main >
         <router-outlet></router-outlet>
     </main>
 </div>
