@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterOutlet } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { CommonModule } from '@angular/common';
 import { routeTransition } from './animations/route-transition';
@@ -15,7 +15,7 @@ import { routeTransition } from './animations/route-transition';
   ], 
 })
 export class AppComponent implements OnInit{
-  constructor(protected route: ActivatedRoute) {}
+  constructor(protected route: ActivatedRoute, private router: Router) {}
 
   isHomeActive: boolean = false;
 
@@ -24,12 +24,12 @@ export class AppComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    if(this.isHomeActive) {
-    const elem = document.querySelector('app-header') as HTMLElement;
-    elem.classList.toggle('home-active');
-    const elem2 = document.querySelector('main') as HTMLElement;
-    elem2.classList.toggle('home-active');
-  }
+    // Suscribirse a los cambios de ruta
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.isHomeActive = this.router.url === '/home';
+      }
+    });
   }
 
   

@@ -2,7 +2,7 @@
     <header *ngIf="!isHomeActive">
         <app-header (homeActiveEvent)="onHomeActiveChange($event)"></app-header>
     </header>
-    <main [@routeTransition]="route.snapshot.data" style="display: contents;">
+    <main [@routeTransition]="route.snapshot.data">
         <router-outlet></router-outlet>
     </main>
 </div>
