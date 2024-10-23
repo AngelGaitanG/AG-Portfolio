@@ -1,38 +1,30 @@
-<h1>Resume</h1>
-<section>
-    <h2>Experience</h2>
-    <ul>
-        <li>
-            <h3>Software Engineer, Google (2018-2022)</h3>
-            <p>Designed and developed multiple features for Google's core search product, resulting in a 25% increase in user engagement. Collaborated with cross-functional teams to identify and prioritize project requirements. Implemented automated testing and deployment scripts, reducing deployment time by 50%.</p>
-        </li>
-        <li>
-            <h3>Senior Software Engineer, Microsoft (2015-2018)</h3>
-            <p>Architected and led the development of Microsoft's flagship product, Azure Functions. Built a high-performing team, resulting in a 30% increase in team velocity. Collaborated with product management to define product requirements and developed multiple features, resulting in a 50% increase in customer adoption.</p>
-        </li>
-        <li>
-            <h3>Software Engineer, Facebook (2012-2015)</h3>
-            <p>Developed multiple features for Facebook's core product, resulting in a 20% increase in user engagement. Worked with cross-functional teams to identify and prioritize project requirements. Implemented automated testing and deployment scripts, reducing deployment time by 75%.</p>
-        </li>
-    </ul>
-</section>
-<section>
-    <h2>Education</h2>
-    <ul>
-        <li>
-            <h3>Bachelor of Science in Computer Science, Stanford University (2008-2012)</h3>
-            <p>Coursework: Data Structures, Algorithms, Computer Systems, and Web Development.</p>
-        </li>
-    </ul>
-</section>
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li>Programming languages: Java, Python, C++, JavaScript</li>
-        <li>Development frameworks: Spring, Django, React</li>
-        <li>Databases: MySQL, MongoDB, PostgreSQL</li>
-        <li>Operating Systems: Windows, Linux, macOS</li>
-        <li>Cloud platforms: AWS, Azure, Google Cloud</li>
-    </ul>
-</section>
+<section class="resume">
+    <h1 class="title">RESUME</h1>
+    <div class="container">
+        <div class="education">
+            <h2>Education</h2>
+            <div class="education-items">
 
+                <div class="education-item" *ngFor="let education of educations">
+                    <span class="year">{{education.year}}</span>
+                    <h3>{{education.title}}</h3>
+                    <p>{{education.description}}</p>
+                </div>
+            </div>
+                
+        </div>
+        <span class="divider"></span>
+        <div class="experience">
+            <h2>Experience</h2>
+            <div class="experience-items">
+
+                <div class="experience-item" *ngFor="let experience of experiences">
+                    <span class="year">{{experience.year}}</span>
+                    <h3>{{experience.title}}</h3>
+                    <p>{{experience.description}}</p>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</section>

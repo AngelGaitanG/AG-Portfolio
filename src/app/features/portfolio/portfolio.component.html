@@ -1,0 +1,27 @@
+<section class="portfolio">
+    <h1 class="title">PORTFOLIO</h1>
+    <div class="portfolio-filter">
+        <div class="radio-container">
+            <input type="radio" id="todos" name="categoria" value="todos" checked>
+            <label for="todos">ALL</label>
+
+            <input type="radio" id="disenos-web" name="categoria" value="disenos-web">
+            <label for="disenos-web">WEB DESIGN</label>
+
+            <input type="radio" id="aplicaciones-moviles" name="categoria" value="aplicaciones-moviles">
+            <label for="aplicaciones-moviles">MOBILE APPS</label>
+
+            <input type="radio" id="backend" name="categoria" value="backend">
+            <label for="backend">BACKEND</label>
+        </div>
+    </div>
+
+    <div class="portfolio-items">
+        <div class="portfolio-item" *ngFor="let item of portfolioItems" [ngClass]="{'hidden': !showItem(item.categoria)}">
+            <!-- Aquí irá el contenido de cada ítem del portfolio -->
+            <img [src]="item.imagen" [alt]="item.titulo">
+            
+        </div>
+    </div>
+
+</section>

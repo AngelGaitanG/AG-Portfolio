@@ -3,6 +3,7 @@ import { HomeComponent } from './features/home/home.component';
 import { AboutMeComponent } from './features/about-me/about-me.component';
 import { ResumeComponent } from './features/resume/resume.component';
 import { animation } from '@angular/animations';
+import { PortfolioComponent } from './features/portfolio/portfolio.component';
 
 export const routes: Routes = [
     {
@@ -16,6 +17,10 @@ export const routes: Routes = [
     {
         path: 'resume',
         component: ResumeComponent, 
+    },
+    {
+        path: 'portfolio',
+        component: PortfolioComponent
     },
     {
         path: '',
