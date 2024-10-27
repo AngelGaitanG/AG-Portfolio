@@ -4,6 +4,8 @@ import { AboutMeComponent } from './features/about-me/about-me.component';
 import { ResumeComponent } from './features/resume/resume.component';
 import { animation } from '@angular/animations';
 import { PortfolioComponent } from './features/portfolio/portfolio.component';
+import { TestimonialsComponent } from './features/testimonials/testimonials.component';
+import { ContactComponent } from './features/contact/contact.component';
 
 export const routes: Routes = [
     {
@@ -21,6 +23,14 @@ export const routes: Routes = [
     {
         path: 'portfolio',
         component: PortfolioComponent
+    },
+    {
+        path: 'testimonials',
+        component: TestimonialsComponent
+    },
+    {
+        path: 'contact',
+        component: ContactComponent
     },
     {
         path: '',

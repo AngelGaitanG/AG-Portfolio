@@ -1,0 +1,23 @@
+<section class="testimonials">
+    <h1 class="title">TESTIMONIALS</h1>
+    <div class="testimonials-container">
+        <div class="testimonial" *ngFor="let testimonial of testimonials">
+            <div class="left-column">
+                <img src="{{ testimonial.image }}" alt="{{ testimonial.name }}">
+                <div class="rating">
+                    <span *ngFor="let star of [1,2,3,4,5]" 
+                          class="star"
+                          [ngClass]="{'filled': star <= testimonial.rating}">
+                        ★
+                    </span>
+                </div>
+            </div>
+            <div class="right-column">
+                <h3 class="name">{{ testimonial.name }}</h3>
+                <p class="testimonial-title">{{ testimonial.title }}</p>
+                <p class="text">{{ testimonial.text }}</p>
+                <p class="date">{{ testimonial.date }}</p>
+            </div>
+        </div>
+    </div>
+</section>
