@@ -1,29 +1,41 @@
 <section class="resume">
-    <h1 class="title">RESUME</h1>
-    <div class="container">
-        <div class="education">
+    <h1 class="title">{{ data.title }}</h1>
+    
+    <div class="resume-content">
+        <div class="education-section">
             <h2>Education</h2>
-            <div class="education-items">
-
-                <div class="education-item" *ngFor="let education of educations">
-                    <span class="year">{{education.year}}</span>
-                    <h3>{{education.title}}</h3>
-                    <p>{{education.description}}</p>
+            <div class="timeline">
+                <div class="timeline-item" *ngFor="let edu of data.education">
+                    <div class="year">{{ edu.year }}</div>
+                    <div class="content">
+                        <h3>{{ edu.title }}</h3>
+                        <h4>{{ edu.description }}</h4>
+                        <ul>
+                            <li *ngFor="let achievement of edu.achievements">
+                                {{ achievement }}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-                
         </div>
-        <span class="divider"></span>
-        <div class="experience">
-            <h2>Experience</h2>
-            <div class="experience-items">
 
-                <div class="experience-item" *ngFor="let experience of experiences">
-                    <span class="year">{{experience.year}}</span>
-                    <h3>{{experience.title}}</h3>
-                    <p>{{experience.description}}</p>
+        <div class="experience-section">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item" *ngFor="let exp of data.experience">
+                    <div class="year">{{ exp.year }}</div>
+                    <div class="content">
+                        <h3>{{ exp.title }}</h3>
+                        <h4>{{ exp.company }}</h4>
+                        <p>{{ exp.description }}</p>
+                        <ul>
+                            <li *ngFor="let responsibility of exp.responsibilities">
+                                {{ responsibility }}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            
             </div>
         </div>
     </div>

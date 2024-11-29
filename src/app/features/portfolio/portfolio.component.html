@@ -1,27 +1,64 @@
 <section class="portfolio">
     <h1 class="title">PORTFOLIO</h1>
-    <div class="portfolio-filter">
-        <div class="radio-container">
-            <input type="radio" id="todos" name="categoria" value="todos" checked>
-            <label for="todos">ALL</label>
+    
+    <div class="filters">
+        <button class="filter-btn" 
+                [class.active]="selectedCategory === 'all'"
+                (click)="filterProjects('all')">
+            Todos
+        </button>
+        <button class="filter-btn" 
+                [class.active]="selectedCategory === 'web'"
+                (click)="filterProjects('web')">
+            Web
+        </button>
+        <button class="filter-btn" 
+                [class.active]="selectedCategory === 'mobile'"
+                (click)="filterProjects('mobile')">
+            Mobile
+        </button>
+        <button class="filter-btn" 
+                [class.active]="selectedCategory === 'desktop'"
+                (click)="filterProjects('desktop')">
+            Desktop
+        </button>
+    </div>
 
-            <input type="radio" id="disenos-web" name="categoria" value="disenos-web">
-            <label for="disenos-web">WEB DESIGN</label>
-
-            <input type="radio" id="aplicaciones-moviles" name="categoria" value="aplicaciones-moviles">
-            <label for="aplicaciones-moviles">MOBILE APPS</label>
-
-            <input type="radio" id="backend" name="categoria" value="backend">
-            <label for="backend">BACKEND</label>
+    <div class="projects-grid">
+        <div class="project-card" 
+             *ngFor="let project of currentPageProjects" 
+             (click)="showProjectDetail(project)"
+             [@fadeInOut]>
+            <div class="project-thumbnail">
+                <img [src]="project.thumbnail" [alt]="project.title">
+                <div class="project-overlay">
+                    <span class="category">{{project.category}}</span>
+                    <h3>{{project.title}}</h3>
+                    <div class="tech-stack">
+                        <span *ngFor="let tech of project.technologies">{{tech}}</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="portfolio-items">
-        <div class="portfolio-item" *ngFor="let item of portfolioItems" [ngClass]="{'hidden': !showItem(item.categoria)}">
-            <!-- Aquí irá el contenido de cada ítem del portfolio -->
-            <img [src]="item.imagen" [alt]="item.titulo">
-            
-        </div>
+    <div class="pagination">
+        <button class="nav-btn prev" 
+                [disabled]="currentPage === 0"
+                (click)="previousPage()">
+            ←
+        </button>
+        <span class="page-indicator">{{currentPage + 1}} / {{totalPages}}</span>
+        <button class="nav-btn next" 
+                [disabled]="currentPage === totalPages - 1"
+                (click)="nextPage()">
+            →
+        </button>
     </div>
 
+    <app-project-detail
+        *ngIf="selectedProject"
+        [project]="selectedProject"
+        (close)="closeProjectDetail()">
+    </app-project-detail>
 </section>

@@ -1,47 +1,76 @@
 <section class="contact">
-    <h1 class="title">CONTACTO</h1>
+    <h1 class="title">{{ data.title }}</h1>
     <div class="contact-content">
       <div class="contact-info">
         <div class="contact-description">
-          I'm always interested in hearing about new projects and opportunities. 
-          Feel free to reach out using the form or directly via email or phone.
+          {{ data.description }}
         </div>
         <div class="contact-details">
           <div class="detail-item">
             <div class="detail-label">Email</div>
-            <div class="detail-value">hello-yourportfolio.com</div>
+            <div class="detail-value">{{ data.details.email }}</div>
           </div>
           <div class="detail-item">
             <div class="detail-label">Phone</div>
-            <div class="detail-value">+1 (555) 123-4567</div>
+            <div class="detail-value">{{ data.details.phone }}</div>
           </div>
           <div class="detail-item">
             <div class="detail-label">Location</div>
-            <div class="detail-value">Tech City, Country</div>
+            <div class="detail-value">{{ data.details.location }}</div>
           </div>
         </div>
         <div class="social-links">
-          <div class="social-icon">LinkedIn</div>
-          <div class="social-icon">GitHub</div>
-          <div class="social-icon">Twitter</div>
+          <div class="social-icon"><a href="https://www.linkedin.com/in/angelgabrielgaitan/" target="_blank">LinkedIn</a></div>
+          <div class="social-icon"><a href="https://github.com/angelgabrielgaitan" target="_blank">GitHub</a></div>
+          <div class="social-icon"><a href="https://twitter.com/angelgabrielgaitan" target="_blank">Twitter</a></div>
         </div>
       </div>
       
       <div class="contact-form-container">
-        <div class="contact-form">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
           <div class="form-group">
-            <input type="text" placeholder="Your Name" />
+            <input 
+              type="text" 
+              [placeholder]="data.form.namePlaceholder"
+              formControlName="name"
+              [class.error]="nameError && contactForm.get('name')?.touched"
+            />
+            <span class="error-message" *ngIf="nameError">{{ nameError }}</span>
           </div>
           <div class="form-group">
-            <input type="email" placeholder="Your Email" />
+            <input 
+              type="email" 
+              [placeholder]="data.form.emailPlaceholder"
+              formControlName="email"
+              [class.error]="emailError && contactForm.get('email')?.touched"
+            />
+            <span class="error-message" *ngIf="emailError">{{ emailError }}</span>
           </div>
           <div class="form-group">
-            <textarea placeholder="Your Message"></textarea>
+            <textarea 
+              [placeholder]="data.form.messagePlaceholder"
+              formControlName="message"
+              [class.error]="messageError && contactForm.get('message')?.touched"
+            ></textarea>
+            <span class="error-message" *ngIf="messageError">{{ messageError }}</span>
           </div>
           <div class="form-group">
-            <button type="submit">Send</button>
+            <button 
+              type="submit" 
+              [disabled]="!contactForm.valid || isSubmitting"
+            >
+              {{ isSubmitting ? data.form.sending : data.form.buttonText }}
+            </button>
           </div>
-        </div>
+          <div class="status-message" *ngIf="submitStatus">
+            <div class="success" *ngIf="submitStatus === 'success'">
+              {{ data.form.successMessage }}
+            </div>
+            <div class="error" *ngIf="submitStatus === 'error'">
+              {{ data.form.errorMessage }}
+            </div>
+          </div>
+        </form>
       </div>
     </div>
 </section>

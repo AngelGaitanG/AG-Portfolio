@@ -1,138 +1,282 @@
 @import "../../../styles.scss";
 
-@import "../../../styles.scss";
-
 :host {
     background-color: $secondary-color;
     height: 100%;
-  }
+    overflow-y: auto;
+    display: block;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba($primary-color, 0.5);
+        border-radius: 4px;
+        
+        &:hover {
+            background: $primary-color;
+        }
+    }
+}
 
 .resume {
+    padding: 20px;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: $secondary-color;
-    padding: 0 5%;
+    
     .title {
-      width: 100%;
-      padding: 15px 0;
-      margin-top: 25px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-family: $title-font;
-      font-size: $font-size-h0-5;
-      border: 2px solid rgba(122, 122, 122, 0.5);
-      letter-spacing: 10px;
-      color: rgba(78, 78, 78);
+        width: 100%;
+        padding: 15px 0;
+        margin: 25px 0;
+        text-align: center;
+        font-weight: 700;
+        font-family: $title-font;
+        font-size: $font-size-h0-5;
+        border: 2px solid rgba(122, 122, 122, 0.5);
+        letter-spacing: 10px;
+        color: rgba(78, 78, 78);
     }
 
-    .container {
-        width: 100%;
-        height: 100%;
+    .resume-content {
         display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding-left: 10px;
-        .divider {
-          width: 100%;
-          height: 2px;
-          background-color: $primary-color;
+        gap: 40px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+
+        .education-section,
+        .experience-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-family: $title-font;
+                font-size: $font-size-h4;
+                color: $fourth-color;
+                margin-bottom: 20px;
+                padding: 15px 20px;
+                background: $fourth-color;
+                color: $primary-color;
+                border-radius: 8px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .timeline {
+                position: relative;
+                padding-left: 30px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 2px;
+                    background: $fourth-color;
+                }
+
+                .timeline-item {
+                    position: relative;
+                    padding: 20px;
+                    margin-bottom: 30px;
+                    background: $fourth-color;
+                    border-radius: 8px;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: -34px;
+                        top: 20px;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background: $primary-color;
+                        border: 3px solid $fourth-color;
+                        box-shadow: 0 0 0 3px rgba($primary-color, 0.3);
+                    }
+
+                    &:hover {
+                        transform: translateX(10px);
+                        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+                        &::before {
+                            background: $primary-color;
+                            box-shadow: 0 0 0 5px rgba($primary-color, 0.3);
+                        }
+
+                        .year {
+                            transform: scale(1.05);
+                        }
+                    }
+
+                    .year {
+                        display: inline-block;
+                        color: $primary-color;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                        font-family: $title-font;
+                        padding: 5px 15px;
+                        background: rgba($primary-color, 0.1);
+                        border-radius: 20px;
+                        transition: all 0.3s ease;
+                    }
+
+                    .content {
+                        h3 {
+                            color: $primary-color-light-contrast;
+                            font-size: 1.1rem;
+                            margin-bottom: 5px;
+                        }
+
+                        h4 {
+                            color: $secondary-color;
+                            font-size: 0.9rem;
+                            margin-bottom: 15px;
+                            font-style: italic;
+                        }
+
+                        p {
+                            color: $primary-color-light-contrast;
+                            font-size: 0.9rem;
+                            margin-bottom: 15px;
+                            opacity: 0.9;
+                            line-height: 1.6;
+                        }
+
+                        ul {
+                            list-style: none;
+                            padding-left: 0;
+                            margin-top: 15px;
+
+                            li {
+                                color: $secondary-color;
+                                font-size: 0.9rem;
+                                margin-bottom: 8px;
+                                padding-left: 25px;
+                                position: relative;
+                                line-height: 1.4;
+
+                                &:before {
+                                    content: "→";
+                                    color: $primary-color;
+                                    position: absolute;
+                                    left: 0;
+                                    font-weight: bold;
+                                }
+
+                                &:hover {
+                                    color: $primary-color-light-contrast;
+                                    transform: translateX(5px);
+                                    transition: all 0.3s ease;
+
+                                    &:before {
+                                        transform: translateX(3px);
+                                        transition: all 0.3s ease;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .resume {
+        padding: 15px;
+        padding-bottom: 100px;
+        
+        .title {
+            font-size: $font-size-h2;
+            letter-spacing: 6px;
+            margin: 15px 0;
         }
         
-        .education {
-          
-          margin-top: 25px;
+        .resume-content {
+            flex-direction: column;
+            gap: 30px;
+            padding: 10px;
 
-          h2 {
-            font-size: $font-size-h5;
-            font-family: $title-font;
-            font-weight: 600;
-          }
-          .education-items {
-            
-            display: flex;
-            flex-direction: row;
-            gap: 0px 40px;
-            
-            .education-item {
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-            .year {
-              width: fit-content;
-              display: inline-block;
-              font-family: $title-font;
-              font-size: $font-size-large;
-              font-weight: 800;
-              background-color: $primary-color;
-              padding: 3px 10px;
-              border-radius: 5px;
-              margin-top: 5px;  
-              color: #f6f6f6;
-            }
-            h3 {
-              margin-top: 5px;
-              margin-bottom: 10px;
-              font-size: $font-size-large;
-              font-weight: 600;
-            }
-            p {
-              text-align: justify;
-              font-size: $font-size-base;
-              font-weight: 500;
-              color: rgba(78, 78, 78)
-            }
-          }
-          }
-        }
+            .education-section,
+            .experience-section {
+                h2 {
+                    font-size: $font-size-h5;
+                }
 
-        .experience {
-          
-          h2 {
-            font-size: $font-size-h5;
-            font-family: $title-font;
-            font-weight: 600;
-          }
+                .timeline-item {
+                    padding: 15px;
 
-          .experience-items {
-            
-            display: flex;
-            flex-direction: row;
-            gap: 0px 40px;
-            .experience-item {
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-              .year {
-                width: fit-content;
-                display: inline-block;
-              font-family: $title-font;
-                font-size: $font-size-large;
-                font-weight: 800;
-                  background-color: $primary-color;
-                padding: 3px 10px;
-                border-radius: 5px;
-                margin-top: 5px;  
-                color: #f6f6f6;
-              }
-              h3 {
-                margin-top: 5px;
-                margin-bottom: 10px;
-                font-size: $font-size-large;
-                font-weight: 600;
-              }
-              p {
-                font-size: $font-size-base;
-                font-weight: 400;
-                color: rgba(78, 78, 78)
-              }
+                    .content {
+                        h3 {
+                            font-size: 1rem;
+                        }
+
+                        h4, p {
+                            font-size: 0.85rem;
+                        }
+
+                        ul li {
+                            font-size: 0.85rem;
+                        }
+                    }
+                }
             }
-          }
         }
     }
-  }
+}
+
+@media (max-width: 480px) {
+    .resume {
+        padding: 10px;
+        
+        .title {
+            font-size: $font-size-h3;
+            letter-spacing: 4px;
+        }
+        
+        .resume-content {
+            padding: 5px;
+            
+            .education-section,
+            .experience-section {
+                h2 {
+                    font-size: $font-size-h6;
+                }
+
+                .timeline-item {
+                    padding: 12px;
+
+                    .year {
+                        font-size: 0.9rem;
+                    }
+
+                    .content {
+                        h3 {
+                            font-size: 0.95rem;
+                        }
+
+                        h4, p {
+                            font-size: 0.8rem;
+                        }
+
+                        ul li {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

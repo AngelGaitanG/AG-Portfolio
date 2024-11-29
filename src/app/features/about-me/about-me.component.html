@@ -1,52 +1,36 @@
 <section class="about-me">
-  <h1 class="title">ABOUT ME</h1>
+  <h1 class="title">{{ data.title }}</h1>
   <div class="description">
-    <h2 class="subtitle">I'm <span>Angel Gaitan,</span> Graphic Designer / Photographer</h2>
-    <p>I'm a passionate software engineer with a strong focus on delivering high-quality products. I have a solid understanding of computer science fundamentals and software development life cycles. Proficient in a range of programming languages, with experience in team collaboration and agile development methodologies. Always looking for ways to improve my skills and stay up to date with the latest technologies and industry trends.</p>
+    <h2 class="subtitle" [innerHTML]="data.subtitle"></h2>
+    <p>{{ data.description }}</p>
   </div>
   <div class="row">
       <div class="square-container">
         <div class="square">
           <span>15+</span>
-          <h4>Years of Experience</h4>
+          <h4>{{ data.metrics.experience }}</h4>
         </div>
         <div class="square">
           <span>100+</span>
-          <h4>Happy Clients</h4>
+          <h4>{{ data.metrics.clients }}</h4>
         </div>
         <div class="square">
           <span>50+</span>
-          <h4>Projects Completed</h4>
+          <h4>{{ data.metrics.projects }}</h4>
         </div>
         <div class="square">
           <span>10+</span>
-          <h4>Awards Won</h4>
+          <h4>{{ data.metrics.awards }}</h4>
         </div>
       </div>
       <div class="what-i-do">
-        <h3 class="title-wid">
-          ¿Qué hago?
-        </h3>
+        <h3 class="title-wid">{{ data.whatIDo.title }}</h3>
         <div class="wid-container">
-          <div class="wid-card">
-            <img src="../../../assets/icons/navegador-web.png" alt="Desarrollo Web">
+          <div class="wid-card" *ngFor="let service of data.whatIDo.services">
+            <img [src]="service.icon" [alt]="service.title">
             <div class="colum-wid">
-              <h4>Desarrollo Web Full Stack</h4>
-              <p>Creo aplicaciones web robustas con Angular y NestJS, asegurando una experiencia fluida y alto rendimiento.</p>
-            </div>
-          </div>
-          <div class="wid-card">
-            <img src="../../../assets/icons/bitcoin.png" alt="Desarrollo Móvil">
-            <div class="colum-wid">
-              <h4>Desarrollo de Aplicaciones Móviles</h4>
-              <p>Desarrollo apps multiplataforma con Ionic, ofreciendo soluciones innovadoras para diversos sectores.</p>
-            </div>
-          </div>
-          <div class="wid-card">
-            <img src="../../../assets/icons/bolsa-de-la-compra.png" alt="E-commerce">
-            <div class="colum-wid">
-              <h4>Soluciones E-commerce</h4>
-              <p>Implemento plataformas de e-commerce seguras, integrando sistemas de pago y optimizando la experiencia de compra.</p>
+              <h4>{{ service.title }}</h4>
+              <p>{{ service.description }}</p>
             </div>
           </div>
         </div>

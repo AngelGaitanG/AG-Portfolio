@@ -1,9 +1,9 @@
 <section class="testimonials">
-    <h1 class="title">TESTIMONIALS</h1>
+    <h1 class="title">{{ data.title }}</h1>
     <div class="testimonials-container">
-        <div class="testimonial" *ngFor="let testimonial of testimonials">
+        <div class="testimonial" *ngFor="let testimonial of data.items">
             <div class="left-column">
-                <img src="{{ testimonial.image }}" alt="{{ testimonial.name }}">
+                <img [src]="testimonial.image" [alt]="testimonial.name">
                 <div class="rating">
                     <span *ngFor="let star of [1,2,3,4,5]" 
                           class="star"
