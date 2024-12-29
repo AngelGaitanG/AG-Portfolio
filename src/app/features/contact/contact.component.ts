@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import emailjs from '@emailjs/browser';
 import { LanguageService } from '../../core/services/language.service';
@@ -12,7 +12,7 @@ import { spanishData, englishData, PortfolioData } from '../../core/data/portfol
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
   data: PortfolioData['contact'] = {
     title: '',
     description: '',
@@ -39,6 +39,7 @@ export class ContactComponent implements OnInit {
       }
     }
   };
+  
   contactForm: FormGroup;
   isSubmitting = false;
   submitStatus: 'success' | 'error' | null = null;

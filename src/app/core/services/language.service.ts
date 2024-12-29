@@ -11,7 +11,6 @@ export class LanguageService {
   currentLanguage$ = this.currentLanguageSubject.asObservable();
 
   constructor() {
-    // Intentar obtener el idioma guardado en localStorage
     const savedLanguage = localStorage.getItem('preferred-language') as Language;
     if (savedLanguage) {
       this.currentLanguageSubject.next(savedLanguage);
