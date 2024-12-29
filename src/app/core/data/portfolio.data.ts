@@ -267,296 +267,127 @@ export const spanishData: PortfolioData = {
       all: 'Todos',
       web: 'Web',
       mobile: 'Móvil',
-      desktop: 'Escritorio'
+      desktop: 'Ecommerce'
     },
     projects: [
       {
         id: 1,
-        title: "Dashboard E-commerce",
+        title: "Elecar Appoints Manager",
         category: "web",
         thumbnail: "https://picsum.photos/id/180/800/600",
-        description: "Dashboard administrativo para gestión de e-commerce con análisis en tiempo real",
-        technologies: ["Angular", "NestJS", "PostgreSQL", "Docker"],
+        description: "Aplicación Full Stack para gestión de turnos en talleres automotrices con sistema de notificaciones y perfil de usuario",
+        technologies: ["React", "NodeJS", "Express", "MongoDB", "PostgreSQL", "HTML", "CSS", "JavaScript", "Git"],
         images: [
           "https://picsum.photos/id/180/800/600",
-          "https://picsum.photos/id/181/800/600",
+          "https://picsum.photos/id/181/800/600", 
           "https://picsum.photos/id/182/800/600"
         ],
         details: {
-          client: "TechStore Inc.",
-          date: "2023",
-          url: "https://techstore-dashboard.com",
-          challenge: "Crear una interfaz intuitiva para gestionar grandes volúmenes de productos y pedidos en tiempo real.",
-          solution: "Implementación de arquitectura escalable con microservicios y sistema de caché para optimizar el rendimiento."
+          client: "My Projects",
+          date: "2024",
+          url: "https://elecar-turn-manager.vercel.app/",
+          challenge: "Desarrollar un sistema intuitivo para la gestión de turnos que permita a los usuarios programar servicios y recibir actualizaciones en tiempo real.",
+          solution: "Implementación de una arquitectura Full Stack con sistema de notificaciones, gestión de perfiles de usuario y seguimiento de servicios en tiempo real."
         }
       },
       {
         id: 2,
-        title: "Aplicación de Fitness",
+        title: "Wander Aura",
         category: "mobile",
         thumbnail: "https://picsum.photos/id/183/800/600",
-        description: "Aplicación móvil para seguimiento de rutinas de ejercicio y nutrición",
-        technologies: ["Ionic", "Angular", "Firebase", "NodeJS"],
+        description: "Plataforma Full Stack para la organización de experiencias de viajes personalizables con sistema de votación y red social para compartir experiencias",
+        technologies: ["Ionic", "Angular", "RXJS", "Capacitor", "HTML", "JavaScript", "SCSS", "PostgreSQL", "Git", "GitHub", "Docker", "NestJS", "JWT", "Bcrypt", "TypeScript"],
         images: [
           "https://picsum.photos/id/183/800/600",
-          "https://picsum.photos/id/184/800/600",
+          "https://picsum.photos/id/184/800/600", 
           "https://picsum.photos/id/185/800/600"
         ],
         details: {
-          client: "FitLife Solutions",
-          date: "2023",
-          url: "https://fitlife-app.com",
-          challenge: "Desarrollar una aplicación intuitiva que motive a los usuarios a mantener un estilo de vida saludable.",
-          solution: "Implementación de gamificación y sistema de recompensas para mantener el engagement de los usuarios."
+          client: "My Projects",
+          date: "2024",
+          url: "https://wander-aura-mobile.vercel.app/",
+          challenge: "Crear una plataforma integral que permita a los usuarios planificar viajes personalizados, compartir experiencias y acceder a información relevante como el clima.",
+          solution: "Desarrollo de una arquitectura Full Stack con autenticación segura, sistema de votación basado en preferencias y funcionalidades sociales para compartir experiencias de viaje."
         }
       },
       {
         id: 3,
-        title: "Plataforma de Gestión de Tareas",
-        category: "web",
+        title: "Ecommerce Backend",
+        category: "web", 
         thumbnail: "https://picsum.photos/id/186/800/600",
-        description: "Plataforma de gestión de proyectos y tareas colaborativa",
-        technologies: ["React", "Redux", "Express", "MongoDB"],
+        description: "Backend robusto para plataforma de ecommerce con gestión de productos, categorías, usuarios, órdenes y pagos",
+        technologies: ["NodeJS", "Express", "PostgreSQL", "Git", "GitHub", "Docker", "NestJS", "JWT", "Bcrypt", "TypeScript"],
         images: [
           "https://picsum.photos/id/186/800/600",
           "https://picsum.photos/id/187/800/600",
           "https://picsum.photos/id/188/800/600"
         ],
         details: {
-          client: "ProjectPro Inc.",
-          date: "2022",
-          url: "https://projectpro-platform.com",
-          challenge: "Crear una plataforma que simplifique la gestión de proyectos complejos en equipos distribuidos.",
-          solution: "Desarrollo de una interfaz drag-and-drop intuitiva con actualizaciones en tiempo real."
+          client: "My Projects",
+          date: "2024",
+          url: "https://ecommerce-backend.vercel.app/",
+          challenge: "Desarrollar un backend robusto y seguro que permita gestionar todos los aspectos de una plataforma de comercio electrónico.",
+          solution: "Implementación de una arquitectura escalable con sistema de autenticación, gestión de productos y órdenes, y procesamiento seguro de pagos."
         }
       },
       {
         id: 4,
-        title: "Sistema de Control Domótico",
-        category: "desktop",
+        title: "Portfolio Profesional",
+        category: "web",
         thumbnail: "https://picsum.photos/id/189/800/600",
-        description: "Aplicación de escritorio para control domótico integral",
-        technologies: ["Electron", "Vue.js", "Python", "MQTT"],
+        description: "Portfolio profesional desarrollado para un cliente del sector de servicios, con diseño minimalista y enfoque en la experiencia de usuario. Incluye modo oscuro, animaciones suaves y formulario de contacto integrado.",
+        technologies: ["Angular", "TypeScript", "SCSS"],
         images: [
           "https://picsum.photos/id/189/800/600",
           "https://picsum.photos/id/190/800/600",
           "https://picsum.photos/id/191/800/600"
         ],
         details: {
-          client: "SmartTech Solutions",
-          date: "2023",
-          challenge: "Desarrollar una interfaz unificada para controlar múltiples dispositivos IoT.",
-          solution: "Implementación de arquitectura modular y protocolo MQTT para comunicación en tiempo real."
+          client: "Jesus Madero",
+          date: "2024",
+          url: "https://jesusmadero.vercel.app/home",
+          challenge: "Crear una plataforma profesional que refleje la identidad de la marca mientras mantiene una interfaz limpia y funcional, con énfasis en la presentación de servicios y portafolio de proyectos.",
+          solution: "Desarrollo de una single-page application con diseño responsivo, implementando una arquitectura modular y componentes reutilizables. Se integró un sistema de gestión de contenido para facilitar las actualizaciones y un formulario de contacto con validación en tiempo real."
         }
       },
       {
         id: 5,
-        title: "Sistema de Gestión de Inventario",
+        title: "Página Personal - Yazmin Villota",
         category: "web",
-        thumbnail: "https://picsum.photos/id/192/800/600",
-        description: "Sistema de gestión de inventario multialmacén",
-        technologies: ["Angular", "Spring Boot", "MySQL", "Docker"],
+        thumbnail: "ruta-a-la-imagen",
+        description: "Sitio web personal diseñado para una artista, con un enfoque en la presentación de su obra pictórica y fotográfica. Incluye un blog para compartir pensamientos y experiencias artísticas.",
+        technologies: ["Angular", "SCSS", "TypeScript"],
         images: [
           "https://picsum.photos/id/192/800/600",
           "https://picsum.photos/id/193/800/600",
           "https://picsum.photos/id/194/800/600"
         ],
         details: {
-          client: "LogisticsPro Corp",
-          date: "2023",
-          challenge: "Optimizar la gestión de inventario en múltiples ubicaciones.",
-          solution: "Sistema predictivo de stock y automatización de pedidos."
+          client: "Yazmin Villota - Artista",
+          date: "2024",
+          url: "https://yazminvillota.vercel.app/",
+          challenge: "Crear una plataforma visualmente atractiva que refleje el estilo artístico de la cliente, permitiendo la fácil navegación entre su galería de arte y su blog personal.",
+          solution: "Desarrollo de un sitio web con un diseño inspirado en el arte de Vincent van Gogh, utilizando elementos visuales que complementan las obras de la artista. Se implementó un sistema de gestión de contenido para facilitar la publicación de blogs y la actualización de la galería."
         }
       },
       {
         id: 6,
-        title: "Plataforma de Aprendizaje Online",
+        title: "Sitio Web de Clínica Dental",
         category: "web",
         thumbnail: "https://picsum.photos/id/195/800/600",
-        description: "LMS con funcionalidades de videoconferencia y evaluación en tiempo real",
-        technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
+        description: "Página web para una clínica dental, diseñada para ofrecer información clara sobre servicios, equipo médico y contacto. Incluye un sistema de reservas en línea y secciones informativas sobre tratamientos.",
+        technologies: ["Angular", "SCSS", "TypeScript"],
         images: [
           "https://picsum.photos/id/195/800/600",
           "https://picsum.photos/id/196/800/600",
           "https://picsum.photos/id/197/800/600"
         ],
         details: {
-          client: "EduTech Solutions",
-          date: "2023",
-          url: "https://edutech-platform.com",
-          challenge: "Crear una plataforma educativa escalable con soporte para miles de usuarios simultáneos.",
-          solution: "Implementación de arquitectura serverless y optimización de streaming de video."
-        }
-      },
-      {
-        id: 7,
-        title: "App de Delivery",
-        category: "mobile",
-        thumbnail: "https://picsum.photos/id/198/800/600",
-        description: "Aplicación móvil para gestión de entregas y seguimiento en tiempo real",
-        technologies: ["Flutter", "Firebase", "Google Maps API"],
-        images: [
-          "https://picsum.photos/id/198/800/600",
-          "https://picsum.photos/id/199/800/600",
-          "https://picsum.photos/id/200/800/600"
-        ],
-        details: {
-          client: "FastDelivery",
-          date: "2023",
-          challenge: "Desarrollar un sistema preciso de tracking y asignación de repartidores.",
-          solution: "Implementación de algoritmos de optimización de rutas y geolocalización en tiempo real."
-        }
-      },
-      {
-        id: 8,
-        title: "Sistema POS",
-        category: "desktop",
-        thumbnail: "https://picsum.photos/id/201/800/600",
-        description: "Software de punto de venta con gestión de inventario",
-        technologies: ["Electron", "React", "SQLite", "Node.js"],
-        images: [
-          "https://picsum.photos/id/201/800/600",
-          "https://picsum.photos/id/202/800/600",
-          "https://picsum.photos/id/203/800/600"
-        ],
-        details: {
-          client: "RetailTech",
-          date: "2022",
-          challenge: "Crear un sistema offline-first con sincronización en la nube.",
-          solution: "Desarrollo de sistema de cola de sincronización y manejo de conflictos."
-        }
-      },
-      {
-        id: 9,
-        title: "CRM Empresarial",
-        category: "web",
-        thumbnail: "https://picsum.photos/id/204/800/600",
-        description: "Sistema de gestión de relaciones con clientes",
-        technologies: ["Angular", "Java Spring", "PostgreSQL"],
-        images: [
-          "https://picsum.photos/id/204/800/600",
-          "https://picsum.photos/id/205/800/600",
-          "https://picsum.photos/id/206/800/600"
-        ],
-        details: {
-          client: "Business Solutions Corp",
-          date: "2023",
-          challenge: "Migrar sistema legacy a arquitectura moderna.",
-          solution: "Implementación de microservicios y migración gradual de funcionalidades."
-        }
-      },
-      {
-        id: 10,
-        title: "App de Finanzas Personales",
-        category: "mobile",
-        thumbnail: "https://picsum.photos/id/207/800/600",
-        description: "Aplicación para control de gastos y presupuesto",
-        technologies: ["React Native", "Redux", "Node.js", "MongoDB"],
-        images: [
-          "https://picsum.photos/id/207/800/600",
-          "https://picsum.photos/id/208/800/600",
-          "https://picsum.photos/id/209/800/600"
-        ],
-        details: {
-          client: "FinanceApp Inc",
-          date: "2023",
-          challenge: "Desarrollar algoritmos de categorización automática de gastos.",
-          solution: "Implementación de ML para clasificación de transacciones."
-        }
-      },
-      {
-        id: 11,
-        title: "Sistema de Gestión Hospitalaria",
-        category: "desktop",
-        thumbnail: "https://picsum.photos/id/210/800/600",
-        description: "Software para administración de hospitales y clínicas",
-        technologies: ["C#", ".NET", "SQL Server", "WPF"],
-        images: [
-          "https://picsum.photos/id/210/800/600",
-          "https://picsum.photos/id/211/800/600",
-          "https://picsum.photos/id/212/800/600"
-        ],
-        details: {
-          client: "HealthTech Solutions",
-          date: "2022",
-          challenge: "Integrar múltiples sistemas legacy y garantizar disponibilidad 24/7.",
-          solution: "Arquitectura modular con sistema de respaldo y alta disponibilidad."
-        }
-      },
-      {
-        id: 12,
-        title: "Plataforma de Streaming",
-        category: "web",
-        thumbnail: "https://picsum.photos/id/213/800/600",
-        description: "Servicio de streaming de contenido multimedia",
-        technologies: ["Next.js", "AWS", "Redis", "FFmpeg"],
-        images: [
-          "https://picsum.photos/id/213/800/600",
-          "https://picsum.photos/id/214/800/600",
-          "https://picsum.photos/id/215/800/600"
-        ],
-        details: {
-          client: "StreamMedia",
-          date: "2023",
-          challenge: "Optimizar la entrega de contenido y reducir latencia.",
-          solution: "Implementación de CDN y transcodificación adaptativa."
-        }
-      },
-      {
-        id: 13,
-        title: "App de Reservas de Restaurantes",
-        category: "mobile",
-        thumbnail: "https://picsum.photos/id/216/800/600",
-        description: "Aplicación para reservas y pedidos en restaurantes",
-        technologies: ["Flutter", "Node.js", "PostgreSQL"],
-        images: [
-          "https://picsum.photos/id/216/800/600",
-          "https://picsum.photos/id/217/800/600",
-          "https://picsum.photos/id/218/800/600"
-        ],
-        details: {
-          client: "DineEasy",
-          date: "2023",
-          challenge: "Gestionar reservas en tiempo real y evitar conflictos.",
-          solution: "Sistema de reservas con confirmación inmediata y lista de espera."
-        }
-      },
-      {
-        id: 14,
-        title: "Software de Análisis de Datos",
-        category: "desktop",
-        thumbnail: "https://picsum.photos/id/219/800/600",
-        description: "Herramienta de análisis y visualización de datos",
-        technologies: ["Python", "Qt", "Pandas", "Matplotlib"],
-        images: [
-          "https://picsum.photos/id/219/800/600",
-          "https://picsum.photos/id/220/800/600",
-          "https://picsum.photos/id/221/800/600"
-        ],
-        details: {
-          client: "DataViz Corp",
-          date: "2022",
-          challenge: "Procesar grandes volúmenes de datos eficientemente.",
-          solution: "Implementación de procesamiento paralelo y optimización de memoria."
-        }
-      },
-      {
-        id: 15,
-        title: "Plataforma IoT",
-        category: "web",
-        thumbnail: "https://picsum.photos/id/222/800/600",
-        description: "Dashboard para monitoreo de dispositivos IoT",
-        technologies: ["Vue.js", "Node.js", "MQTT", "InfluxDB"],
-        images: [
-          "https://picsum.photos/id/222/800/600",
-          "https://picsum.photos/id/223/800/600",
-          "https://picsum.photos/id/224/800/600"
-        ],
-        details: {
-          client: "IoT Solutions",
-          date: "2023",
-          challenge: "Manejar miles de conexiones simultáneas de dispositivos.",
-          solution: "Arquitectura basada en WebSockets y procesamiento en tiempo real."
+          client: "My Projects",
+          date: "2024",
+          url: "https://arrua.vercel.app/",
+          challenge: "Desarrollar un sitio web que transmita confianza y profesionalismo, facilitando a los pacientes el acceso a información y la reserva de citas.",
+          solution: "Implementación de un diseño moderno y responsivo, con un sistema de gestión de contenido para actualizar fácilmente la información de servicios y personal. Se integró un formulario de contacto y un sistema de reservas en línea para mejorar la experiencia del usuario."
         }
       }
     ]
@@ -723,296 +554,127 @@ export const englishData: PortfolioData = {
       all: 'All',
       web: 'Web',
       mobile: 'Mobile',
-      desktop: 'Desktop'
+      desktop: 'Ecommerce'
     },
     projects: [
       {
         id: 1,
-        title: "E-commerce Dashboard",
+        title: "Elecar Appoints Manager",
         category: "web",
         thumbnail: "https://picsum.photos/id/180/800/600",
-        description: "Administrative dashboard for e-commerce management with real-time analytics",
-        technologies: ["Angular", "NestJS", "PostgreSQL", "Docker"],
+        description: "Full Stack application for managing appointments in automotive workshops with notification system and user profile",
+        technologies: ["React", "NodeJS", "Express", "MongoDB", "PostgreSQL", "HTML", "CSS", "JavaScript", "Git"],
         images: [
           "https://picsum.photos/id/180/800/600",
-          "https://picsum.photos/id/181/800/600",
+          "https://picsum.photos/id/181/800/600", 
           "https://picsum.photos/id/182/800/600"
         ],
         details: {
-          client: "TechStore Inc.",
-          date: "2023",
-          url: "https://techstore-dashboard.com",
-          challenge: "Create an intuitive interface to manage large volumes of products and orders in real-time.",
-          solution: "Implementation of scalable architecture with microservices and cache system to optimize performance."
+          client: "My Projects",
+          date: "2024",
+          url: "https://elecar-turn-manager.vercel.app/",
+          challenge: "Develop an intuitive system for managing appointments that allows users to schedule services and receive real-time updates.",
+          solution: "Implementation of a Full Stack architecture with notification system, user profile management, and real-time service tracking."
         }
       },
       {
         id: 2,
-        title: "Fitness App",
+        title: "Wander Aura",
         category: "mobile",
         thumbnail: "https://picsum.photos/id/183/800/600",
-        description: "Mobile application for tracking workout routines and nutrition",
-        technologies: ["Ionic", "Angular", "Firebase", "NodeJS"],
+        description: "Full Stack platform for organizing customizable travel experiences with voting system and social network for sharing experiences",
+        technologies: ["Ionic", "Angular", "RXJS", "Capacitor", "HTML", "JavaScript", "SCSS", "PostgreSQL", "Git", "GitHub", "Docker", "NestJS", "JWT", "Bcrypt", "TypeScript"],
         images: [
           "https://picsum.photos/id/183/800/600",
-          "https://picsum.photos/id/184/800/600",
+          "https://picsum.photos/id/184/800/600", 
           "https://picsum.photos/id/185/800/600"
         ],
         details: {
-          client: "FitLife Solutions",
-          date: "2023",
-          url: "https://fitlife-app.com",
-          challenge: "Develop an intuitive application that motivates users to maintain a healthy lifestyle.",
-          solution: "Implementation of gamification and reward system to maintain user engagement."
+          client: "My Projects",
+          date: "2024",
+          url: "https://wander-aura-mobile.vercel.app/",
+          challenge: "Create a comprehensive platform that allows users to plan personalized trips, share experiences, and access relevant information such as weather.",
+          solution: "Development of a Full Stack architecture with secure authentication, preference-based voting system, and social features for sharing travel experiences."
         }
       },
       {
         id: 3,
-        title: "Task Management Platform",
-        category: "web",
+        title: "Ecommerce Backend",
+        category: "web", 
         thumbnail: "https://picsum.photos/id/186/800/600",
-        description: "Collaborative project and task management platform",
-        technologies: ["React", "Redux", "Express", "MongoDB"],
+        description: "Robust backend for ecommerce platform with product, category, user, order, and payment management",
+        technologies: ["NodeJS", "Express", "PostgreSQL", "Git", "GitHub", "Docker", "NestJS", "JWT", "Bcrypt", "TypeScript"],
         images: [
           "https://picsum.photos/id/186/800/600",
           "https://picsum.photos/id/187/800/600",
           "https://picsum.photos/id/188/800/600"
         ],
         details: {
-          client: "ProjectPro Inc.",
-          date: "2022",
-          url: "https://projectpro-platform.com",
-          challenge: "Create a platform that simplifies complex project management in distributed teams.",
-          solution: "Development of an intuitive drag-and-drop interface with real-time updates."
+          client: "My Projects",
+          date: "2024",
+          url: "https://ecommerce-backend.vercel.app/",
+          challenge: "Develop a robust and secure backend that allows managing all aspects of an ecommerce platform.",
+          solution: "Implementation of a scalable architecture with authentication system, product and order management, and secure payment processing."
         }
       },
       {
         id: 4,
-        title: "Smart Home Control System",
-        category: "desktop",
+        title: "Professional Portfolio",
+        category: "web",
         thumbnail: "https://picsum.photos/id/189/800/600",
-        description: "Desktop application for comprehensive home automation control",
-        technologies: ["Electron", "Vue.js", "Python", "MQTT"],
+        description: "Professional portfolio developed for a client in the services sector, with minimalist design and focus on user experience. Includes dark mode, smooth animations, and integrated contact form.",
+        technologies: ["Angular", "TypeScript", "SCSS"],
         images: [
           "https://picsum.photos/id/189/800/600",
           "https://picsum.photos/id/190/800/600",
           "https://picsum.photos/id/191/800/600"
         ],
         details: {
-          client: "SmartTech Solutions",
-          date: "2023",
-          challenge: "Develop a unified interface to control multiple IoT devices.",
-          solution: "Implementation of modular architecture and MQTT protocol for real-time communication."
+          client: "Jesus Madero",
+          date: "2024",
+          url: "https://jesusmadero.vercel.app/home",
+          challenge: "Create a professional platform that reflects the brand identity while maintaining a clean and functional interface, with emphasis on service presentation and project portfolio.",
+          solution: "Development of a single-page application with responsive design, implementing a modular architecture and reusable components. A content management system was integrated to facilitate updates and a contact form with real-time validation."
         }
       },
       {
         id: 5,
-        title: "Inventory Management System",
+        title: "Personal Page - Yazmin Villota",
         category: "web",
-        thumbnail: "https://picsum.photos/id/192/800/600",
-        description: "Multi-warehouse inventory management system",
-        technologies: ["Angular", "Spring Boot", "MySQL", "Docker"],
+        thumbnail: "ruta-a-la-imagen",
+        description: "Personal website designed for an artist, focusing on the presentation of her pictorial and photographic work. Includes a blog to share artistic thoughts and experiences.",
+        technologies: ["Angular", "SCSS", "TypeScript"],
         images: [
           "https://picsum.photos/id/192/800/600",
           "https://picsum.photos/id/193/800/600",
           "https://picsum.photos/id/194/800/600"
         ],
         details: {
-          client: "LogisticsPro Corp",
-          date: "2023",
-          challenge: "Optimize inventory management across multiple locations.",
-          solution: "Predictive stock system and order automation."
+          client: "Yazmin Villota - Artist",
+          date: "2024",
+          url: "https://yazminvillota.vercel.app/",
+          challenge: "Create a visually appealing platform that reflects the client's artistic style, allowing easy navigation between her art gallery and personal blog.",
+          solution: "Development of a website with a design inspired by Vincent van Gogh's art, using visual elements that complement the artist's works. A content management system was implemented to facilitate blog publishing and gallery updates."
         }
       },
       {
         id: 6,
-        title: "Online Learning Platform",
+        title: "Dental Clinic Website",
         category: "web",
         thumbnail: "https://picsum.photos/id/195/800/600",
-        description: "LMS with real-time video conferencing and assessment capabilities",
-        technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
+        description: "Website for a dental clinic, designed to offer clear information about services, medical team, and contact. Includes an online booking system and informative sections about treatments.",
+        technologies: ["Angular", "SCSS", "TypeScript"],
         images: [
           "https://picsum.photos/id/195/800/600",
           "https://picsum.photos/id/196/800/600",
           "https://picsum.photos/id/197/800/600"
         ],
         details: {
-          client: "EduTech Solutions",
-          date: "2023",
-          url: "https://edutech-platform.com",
-          challenge: "Create a scalable educational platform supporting thousands of simultaneous users.",
-          solution: "Implementation of serverless architecture and video streaming optimization."
-        }
-      },
-      {
-        id: 7,
-        title: "Delivery App",
-        category: "mobile",
-        thumbnail: "https://picsum.photos/id/198/800/600",
-        description: "Mobile application for delivery management and real-time tracking",
-        technologies: ["Flutter", "Firebase", "Google Maps API"],
-        images: [
-          "https://picsum.photos/id/198/800/600",
-          "https://picsum.photos/id/199/800/600",
-          "https://picsum.photos/id/200/800/600"
-        ],
-        details: {
-          client: "FastDelivery",
-          date: "2023",
-          challenge: "Develop an accurate tracking and delivery driver assignment system.",
-          solution: "Implementation of route optimization algorithms and real-time geolocation."
-        }
-      },
-      {
-        id: 8,
-        title: "POS System",
-        category: "desktop",
-        thumbnail: "https://picsum.photos/id/201/800/600",
-        description: "Point of sale software with inventory management",
-        technologies: ["Electron", "React", "SQLite", "Node.js"],
-        images: [
-          "https://picsum.photos/id/201/800/600",
-          "https://picsum.photos/id/202/800/600",
-          "https://picsum.photos/id/203/800/600"
-        ],
-        details: {
-          client: "RetailTech",
-          date: "2022",
-          challenge: "Create an offline-first system with cloud synchronization.",
-          solution: "Development of synchronization queue system and conflict handling."
-        }
-      },
-      {
-        id: 9,
-        title: "Enterprise CRM",
-        category: "web",
-        thumbnail: "https://picsum.photos/id/204/800/600",
-        description: "Customer relationship management system",
-        technologies: ["Angular", "Java Spring", "PostgreSQL"],
-        images: [
-          "https://picsum.photos/id/204/800/600",
-          "https://picsum.photos/id/205/800/600",
-          "https://picsum.photos/id/206/800/600"
-        ],
-        details: {
-          client: "Business Solutions Corp",
-          date: "2023",
-          challenge: "Migrate legacy system to modern architecture.",
-          solution: "Implementation of microservices and gradual feature migration."
-        }
-      },
-      {
-        id: 10,
-        title: "Personal Finance App",
-        category: "mobile",
-        thumbnail: "https://picsum.photos/id/207/800/600",
-        description: "Application for expense tracking and budgeting",
-        technologies: ["React Native", "Redux", "Node.js", "MongoDB"],
-        images: [
-          "https://picsum.photos/id/207/800/600",
-          "https://picsum.photos/id/208/800/600",
-          "https://picsum.photos/id/209/800/600"
-        ],
-        details: {
-          client: "FinanceApp Inc",
-          date: "2023",
-          challenge: "Develop automatic expense categorization algorithms.",
-          solution: "Implementation of ML for transaction classification."
-        }
-      },
-      {
-        id: 11,
-        title: "Hospital Management System",
-        category: "desktop",
-        thumbnail: "https://picsum.photos/id/210/800/600",
-        description: "Software for hospital and clinic administration",
-        technologies: ["C#", ".NET", "SQL Server", "WPF"],
-        images: [
-          "https://picsum.photos/id/210/800/600",
-          "https://picsum.photos/id/211/800/600",
-          "https://picsum.photos/id/212/800/600"
-        ],
-        details: {
-          client: "HealthTech Solutions",
-          date: "2022",
-          challenge: "Integrate multiple legacy systems and ensure 24/7 availability.",
-          solution: "Modular architecture with backup system and high availability."
-        }
-      },
-      {
-        id: 12,
-        title: "Streaming Platform",
-        category: "web",
-        thumbnail: "https://picsum.photos/id/213/800/600",
-        description: "Multimedia content streaming service",
-        technologies: ["Next.js", "AWS", "Redis", "FFmpeg"],
-        images: [
-          "https://picsum.photos/id/213/800/600",
-          "https://picsum.photos/id/214/800/600",
-          "https://picsum.photos/id/215/800/600"
-        ],
-        details: {
-          client: "StreamMedia",
-          date: "2023",
-          challenge: "Optimize content delivery and reduce latency.",
-          solution: "Implementation of CDN and adaptive transcoding."
-        }
-      },
-      {
-        id: 13,
-        title: "Restaurant Booking App",
-        category: "mobile",
-        thumbnail: "https://picsum.photos/id/216/800/600",
-        description: "Application for restaurant reservations and orders",
-        technologies: ["Flutter", "Node.js", "PostgreSQL"],
-        images: [
-          "https://picsum.photos/id/216/800/600",
-          "https://picsum.photos/id/217/800/600",
-          "https://picsum.photos/id/218/800/600"
-        ],
-        details: {
-          client: "DineEasy",
-          date: "2023",
-          challenge: "Manage real-time reservations and avoid conflicts.",
-          solution: "Instant confirmation reservation system with waitlist."
-        }
-      },
-      {
-        id: 14,
-        title: "Data Analysis Software",
-        category: "desktop",
-        thumbnail: "https://picsum.photos/id/219/800/600",
-        description: "Data analysis and visualization tool",
-        technologies: ["Python", "Qt", "Pandas", "Matplotlib"],
-        images: [
-          "https://picsum.photos/id/219/800/600",
-          "https://picsum.photos/id/220/800/600",
-          "https://picsum.photos/id/221/800/600"
-        ],
-        details: {
-          client: "DataViz Corp",
-          date: "2022",
-          challenge: "Process large volumes of data efficiently.",
-          solution: "Implementation of parallel processing and memory optimization."
-        }
-      },
-      {
-        id: 15,
-        title: "IoT Platform",
-        category: "web",
-        thumbnail: "https://picsum.photos/id/222/800/600",
-        description: "Dashboard for IoT device monitoring",
-        technologies: ["Vue.js", "Node.js", "MQTT", "InfluxDB"],
-        images: [
-          "https://picsum.photos/id/222/800/600",
-          "https://picsum.photos/id/223/800/600",
-          "https://picsum.photos/id/224/800/600"
-        ],
-        details: {
-          client: "IoT Solutions",
-          date: "2023",
-          challenge: "Handle thousands of simultaneous device connections.",
-          solution: "WebSocket-based architecture and real-time processing."
+          client: "My Projects",
+          date: "2024",
+          url: "https://arrua.vercel.app/",
+          challenge: "Develop a website that conveys trust and professionalism, facilitating patients' access to information and appointment booking.",
+          solution: "Implementation of a modern and responsive design, with a content management system to easily update service and staff information. A contact form and online booking system were integrated to enhance user experience."
         }
       }
     ]
