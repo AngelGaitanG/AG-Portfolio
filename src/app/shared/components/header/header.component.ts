@@ -1,5 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { NavigationEnd, Router, RouterLink, RouterLinkActive } from '@angular/router';
+import { LanguageService } from '../../../core/services/language.service';
+import { englishData, PortfolioData, spanishData } from '../../../core/data/portfolio.data';
 
 @Component({
   selector: 'app-header',
@@ -9,12 +11,25 @@ import { NavigationEnd, Router, RouterLink, RouterLinkActive } from '@angular/ro
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent implements OnInit {
+  data: PortfolioData['header'] = {
+    home: '',
+    aboutMe: '',
+    resume: '',
+    portfolio: '',
+    testimonials: '',
+    contact: ''
+  };
+
   @Output() homeActiveEvent = new EventEmitter<boolean>();
 
-
   constructor(
-    private router: Router
-  ) {}
+    private router: Router,
+    private languageService: LanguageService
+  ) {
+    this.languageService.currentLanguage$.subscribe(lang => {
+      this.data = lang === 'es' ? spanishData.header : englishData.header;
+    });
+  }
 
 
   ngOnInit(): void {

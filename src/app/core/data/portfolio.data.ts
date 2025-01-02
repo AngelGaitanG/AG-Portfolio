@@ -1,4 +1,12 @@
 export interface PortfolioData {
+  header: {
+    home: string;
+    aboutMe: string;
+    resume: string;
+    portfolio: string;
+    testimonials: string;
+    contact: string;
+  };
   home: {
     greeting: string;
     title: string;
@@ -107,6 +115,14 @@ export interface PortfolioData {
 }
 
 export const spanishData: PortfolioData = {
+  header: {
+    home: 'INICIO',
+    aboutMe: 'SOBRE MÍ',
+    resume: 'CURRÍCULUM',
+    portfolio: 'PORTAFOLIO',
+    testimonials: 'TESTIMONIOS',
+    contact: 'CONTACTO'
+  },
   home: {
     greeting: '¡HOLA!',
     title: 'SOY',
@@ -151,49 +167,50 @@ export const spanishData: PortfolioData = {
     title: 'CURRÍCULUM',
     education: [
       {
-        year: '2018 - 2023',
-        title: 'Ingeniería en Sistemas',
-        description: 'Universidad Nacional de Colombia',
+        year: '2019 - 2024',
+        title: 'MIMO - UNSL - SoyHenry',
+        description: 'Universidad de San Luis y Cursos de desarrollo web y mobile',
         achievements: [
           'Mejor promedio de la promoción',
           'Proyecto destacado en desarrollo web',
-          'Participación en hackathons universitarios'
+          'Participación en proyectos reales de desarrollo web y mobile'
         ]
       },
       {
         year: '2023',
-        title: 'Certificación AWS Developer Associate',
-        description: 'Amazon Web Services',
+        title: 'Certificación English for IT B2 ',
+        description: 'Certificación de inglés para profesionales de la tecnología',
         achievements: [
-          'Especialización en servicios cloud',
-          'Desarrollo de arquitecturas serverless',
-          'Implementación de soluciones escalables'
+          'Certificación de inglés para profesionales de la tecnología',
         ]
       }
     ],
     experience: [
       {
-        year: '2022 - Presente',
-        title: 'Desarrollador Full Stack Senior',
-        company: 'Tech Solutions Inc.',
-        description: 'Desarrollo de aplicaciones web empresariales usando Angular y NestJS',
+        year: 'JUN 2024 - AGO 2024',
+        title: 'Desarrollador Full Stack ',
+        company: 'El Plac',
+        description: 'Desarrollo de una aplicacion para la gestión de ferias de ropa',
         responsibilities: [
-          'Liderazgo técnico de equipo de desarrollo',
-          'Implementación de arquitecturas escalables',
-          'Optimización de rendimiento y SEO',
-          'Mentoría a desarrolladores junior'
+          'Desarrollé la base de datos y participe en el desarrollo de la API',
+          'Estuve a cargo de la parte de despliegue de la aplicación y sistemas de contenedores',
+          'Desarrollé algunas conexiones de la API con el frontend y estilizacion de algunos componentes',
+          'Hice pruebas unitarias y de integración',
+          'Implementé el sistema de notificaciones con websockets y el envio de emails',
+          'Implementé el sistema de autenticación con JWT',
         ]
       },
       {
-        year: '2020 - 2022',
-        title: 'Desarrollador Frontend',
-        company: 'Digital Innovation Labs',
-        description: 'Desarrollo de interfaces de usuario modernas y responsivas',
+        year: 'OCT 2024 - ENE 2025',
+        title: 'Desarrollador Full Stack',
+        company: 'CARTA AI',
+        description: 'Desarrollo de microservicios para la aplicación de Carta AI, y diseño de la arquitectura de la aplicación',
         responsibilities: [
-          'Desarrollo de componentes reutilizables',
-          'Integración con APIs RESTful',
-          'Implementación de pruebas unitarias',
-          'Optimización de experiencia de usuario'
+          'Desarrollo de microservicios para la aplicación de Carta AI',
+          'Diseño de muchos componentes de la aplicación, como el chat, el dashboard, el perfil del usuario, formularios, etc.',
+          'Desarrollo de la conexion de backend y frontend',
+          'Desarrollo de la parte de notificaciones',
+          'Implementación de autenticación y autorización',
         ]
       }
     ]
@@ -274,13 +291,13 @@ export const spanishData: PortfolioData = {
         id: 1,
         title: "Elecar Appoints Manager",
         category: "web",
-        thumbnail: "https://picsum.photos/id/180/800/600",
+        thumbnail: "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735836787/portfolio/ElleCar-01-02-2025_01_38_PM_udl5lj.png",
         description: "Aplicación Full Stack para gestión de turnos en talleres automotrices con sistema de notificaciones y perfil de usuario",
         technologies: ["React", "NodeJS", "Express", "MongoDB", "PostgreSQL", "HTML", "CSS", "JavaScript", "Git"],
         images: [
-          "https://picsum.photos/id/180/800/600",
-          "https://picsum.photos/id/181/800/600", 
-          "https://picsum.photos/id/182/800/600"
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735836787/portfolio/ElleCar-01-02-2025_01_37_PM_1_e2jxjo.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735836787/portfolio/ElleCar-01-02-2025_01_37_PM_yzrupo.png", 
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735836787/portfolio/ElleCar-01-02-2025_01_38_PM_udl5lj.png"
         ],
         details: {
           client: "My Projects",
@@ -294,13 +311,13 @@ export const spanishData: PortfolioData = {
         id: 2,
         title: "Wander Aura",
         category: "mobile",
-        thumbnail: "https://picsum.photos/id/183/800/600",
+        thumbnail: "https://raw.githubusercontent.com/AngelGaitanG/WanderAura-mobile/refs/heads/main/wa.png",
         description: "Plataforma Full Stack para la organización de experiencias de viajes personalizables con sistema de votación y red social para compartir experiencias",
         technologies: ["Ionic", "Angular", "RXJS", "Capacitor", "HTML", "JavaScript", "SCSS", "PostgreSQL", "Git", "GitHub", "Docker", "NestJS", "JWT", "Bcrypt", "TypeScript"],
         images: [
-          "https://picsum.photos/id/183/800/600",
-          "https://picsum.photos/id/184/800/600", 
-          "https://picsum.photos/id/185/800/600"
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735839424/portfolio/Ionic-App-01-02-2025_02_35_PM_vbh7by.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735839424/portfolio/Ionic-App-01-02-2025_02_36_PM_pgoj1p.png", 
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735839424/portfolio/Ionic-App-01-02-2025_02_20_PM_jgac9m.png"
         ],
         details: {
           client: "My Projects",
@@ -314,18 +331,18 @@ export const spanishData: PortfolioData = {
         id: 3,
         title: "Ecommerce Backend",
         category: "web", 
-        thumbnail: "https://picsum.photos/id/186/800/600",
+        thumbnail: "https://d1ih8jugeo2m5m.cloudfront.net/2022/07/el-ecommerce-que-es.jpg",
         description: "Backend robusto para plataforma de ecommerce con gestión de productos, categorías, usuarios, órdenes y pagos",
         technologies: ["NodeJS", "Express", "PostgreSQL", "Git", "GitHub", "Docker", "NestJS", "JWT", "Bcrypt", "TypeScript"],
         images: [
-          "https://picsum.photos/id/186/800/600",
-          "https://picsum.photos/id/187/800/600",
-          "https://picsum.photos/id/188/800/600"
+          "https://www.templateshub.net/uploads/1545118579%201544149615%20marazzo.webp",
+          "https://therichpost.com/wp-content/uploads/2021/03/Best-Reactjs-Ecommerce-Templates-Free.png",
+          "https://themefisher.com/blog/flipmart.webp"
         ],
         details: {
           client: "My Projects",
           date: "2024",
-          url: "https://ecommerce-backend.vercel.app/",
+          url: "https://github.com/AngelGaitanG/ecommerce",
           challenge: "Desarrollar un backend robusto y seguro que permita gestionar todos los aspectos de una plataforma de comercio electrónico.",
           solution: "Implementación de una arquitectura escalable con sistema de autenticación, gestión de productos y órdenes, y procesamiento seguro de pagos."
         }
@@ -334,13 +351,13 @@ export const spanishData: PortfolioData = {
         id: 4,
         title: "Portfolio Profesional",
         category: "web",
-        thumbnail: "https://picsum.photos/id/189/800/600",
+        thumbnail: "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735840611/portfolio/JPf-01-02-2025_02_55_PM_1_lgx0yp.png",
         description: "Portfolio profesional desarrollado para un cliente del sector de servicios, con diseño minimalista y enfoque en la experiencia de usuario. Incluye modo oscuro, animaciones suaves y formulario de contacto integrado.",
         technologies: ["Angular", "TypeScript", "SCSS"],
         images: [
-          "https://picsum.photos/id/189/800/600",
-          "https://picsum.photos/id/190/800/600",
-          "https://picsum.photos/id/191/800/600"
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735840610/portfolio/JPf-01-02-2025_02_55_PM_we0xqi.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735840610/portfolio/JPf-01-02-2025_02_54_PM_ujc3x4.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735840610/portfolio/JPf-01-02-2025_02_56_PM_ojr1ji.png"
         ],
         details: {
           client: "Jesus Madero",
@@ -350,37 +367,37 @@ export const spanishData: PortfolioData = {
           solution: "Desarrollo de una single-page application con diseño responsivo, implementando una arquitectura modular y componentes reutilizables. Se integró un sistema de gestión de contenido para facilitar las actualizaciones y un formulario de contacto con validación en tiempo real."
         }
       },
-      {
-        id: 5,
-        title: "Página Personal - Yazmin Villota",
-        category: "web",
-        thumbnail: "ruta-a-la-imagen",
-        description: "Sitio web personal diseñado para una artista, con un enfoque en la presentación de su obra pictórica y fotográfica. Incluye un blog para compartir pensamientos y experiencias artísticas.",
-        technologies: ["Angular", "SCSS", "TypeScript"],
-        images: [
-          "https://picsum.photos/id/192/800/600",
-          "https://picsum.photos/id/193/800/600",
-          "https://picsum.photos/id/194/800/600"
-        ],
-        details: {
-          client: "Yazmin Villota - Artista",
-          date: "2024",
-          url: "https://yazminvillota.vercel.app/",
-          challenge: "Crear una plataforma visualmente atractiva que refleje el estilo artístico de la cliente, permitiendo la fácil navegación entre su galería de arte y su blog personal.",
-          solution: "Desarrollo de un sitio web con un diseño inspirado en el arte de Vincent van Gogh, utilizando elementos visuales que complementan las obras de la artista. Se implementó un sistema de gestión de contenido para facilitar la publicación de blogs y la actualización de la galería."
-        }
-      },
+      // {
+      //   id: 5,
+      //   title: "Página Personal - Yazmin Villota",
+      //   category: "web",
+      //   thumbnail: "ruta-a-la-imagen",
+      //   description: "Sitio web personal diseñado para una artista, con un enfoque en la presentación de su obra pictórica y fotográfica. Incluye un blog para compartir pensamientos y experiencias artísticas.",
+      //   technologies: ["Angular", "SCSS", "TypeScript"],
+      //   images: [
+      //     "https://picsum.photos/id/192/800/600",
+      //     "https://picsum.photos/id/193/800/600",
+      //     "https://picsum.photos/id/194/800/600"
+      //   ],
+      //   details: {
+      //     client: "Yazmin Villota - Artista",
+      //     date: "2024",
+      //     url: "https://yazminvillota.vercel.app/",
+      //     challenge: "Crear una plataforma visualmente atractiva que refleje el estilo artístico de la cliente, permitiendo la fácil navegación entre su galería de arte y su blog personal.",
+      //     solution: "Desarrollo de un sitio web con un diseño inspirado en el arte de Vincent van Gogh, utilizando elementos visuales que complementan las obras de la artista. Se implementó un sistema de gestión de contenido para facilitar la publicación de blogs y la actualización de la galería."
+      //   }
+      // },
       {
         id: 6,
         title: "Sitio Web de Clínica Dental",
         category: "web",
-        thumbnail: "https://picsum.photos/id/195/800/600",
+        thumbnail: "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735842116/portfolio/ArruaDentalClinic-01-02-2025_03_19_PM_o8a35q.png",
         description: "Página web para una clínica dental, diseñada para ofrecer información clara sobre servicios, equipo médico y contacto. Incluye un sistema de reservas en línea y secciones informativas sobre tratamientos.",
         technologies: ["Angular", "SCSS", "TypeScript"],
         images: [
-          "https://picsum.photos/id/195/800/600",
-          "https://picsum.photos/id/196/800/600",
-          "https://picsum.photos/id/197/800/600"
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735842118/portfolio/ArruaDentalClinic-01-02-2025_03_20_PM_gio893.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735842116/portfolio/ArruaDentalClinic-01-02-2025_03_21_PM_fw8nhm.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735842118/portfolio/ArruaDentalClinic-01-02-2025_03_20_PM_1_mmnjoc.png"
         ],
         details: {
           client: "My Projects",
@@ -395,6 +412,14 @@ export const spanishData: PortfolioData = {
 };
 
 export const englishData: PortfolioData = {
+  header: {
+    home: 'HOME',
+    aboutMe: 'ABOUT ME',
+    resume: 'RESUME',
+    portfolio: 'PORTFOLIO',
+    testimonials: 'TESTIMONIALS',
+    contact: 'CONTACT'
+  },
   home: {
     greeting: 'HELLO!',
     title: 'I AM',
@@ -561,13 +586,13 @@ export const englishData: PortfolioData = {
         id: 1,
         title: "Elecar Appoints Manager",
         category: "web",
-        thumbnail: "https://picsum.photos/id/180/800/600",
+        thumbnail: "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735836787/portfolio/ElleCar-01-02-2025_01_38_PM_udl5lj.png",
         description: "Full Stack application for managing appointments in automotive workshops with notification system and user profile",
         technologies: ["React", "NodeJS", "Express", "MongoDB", "PostgreSQL", "HTML", "CSS", "JavaScript", "Git"],
         images: [
-          "https://picsum.photos/id/180/800/600",
-          "https://picsum.photos/id/181/800/600", 
-          "https://picsum.photos/id/182/800/600"
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735836787/portfolio/ElleCar-01-02-2025_01_37_PM_1_e2jxjo.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735836787/portfolio/ElleCar-01-02-2025_01_37_PM_yzrupo.png", 
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735836787/portfolio/ElleCar-01-02-2025_01_38_PM_udl5lj.png"
         ],
         details: {
           client: "My Projects",
@@ -581,13 +606,13 @@ export const englishData: PortfolioData = {
         id: 2,
         title: "Wander Aura",
         category: "mobile",
-        thumbnail: "https://picsum.photos/id/183/800/600",
+        thumbnail: "https://raw.githubusercontent.com/AngelGaitanG/WanderAura-mobile/refs/heads/main/wa.png",
         description: "Full Stack platform for organizing customizable travel experiences with voting system and social network for sharing experiences",
         technologies: ["Ionic", "Angular", "RXJS", "Capacitor", "HTML", "JavaScript", "SCSS", "PostgreSQL", "Git", "GitHub", "Docker", "NestJS", "JWT", "Bcrypt", "TypeScript"],
         images: [
-          "https://picsum.photos/id/183/800/600",
-          "https://picsum.photos/id/184/800/600", 
-          "https://picsum.photos/id/185/800/600"
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735839424/portfolio/Ionic-App-01-02-2025_02_35_PM_vbh7by.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735839424/portfolio/Ionic-App-01-02-2025_02_36_PM_pgoj1p.png", 
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735839424/portfolio/Ionic-App-01-02-2025_02_20_PM_jgac9m.png"
         ],
         details: {
           client: "My Projects",
@@ -600,19 +625,19 @@ export const englishData: PortfolioData = {
       {
         id: 3,
         title: "Ecommerce Backend",
-        category: "web", 
-        thumbnail: "https://picsum.photos/id/186/800/600",
+        category: "web",
+        thumbnail: "https://d1ih8jugeo2m5m.cloudfront.net/2022/07/el-ecommerce-que-es.jpg",
         description: "Robust backend for ecommerce platform with product, category, user, order, and payment management",
         technologies: ["NodeJS", "Express", "PostgreSQL", "Git", "GitHub", "Docker", "NestJS", "JWT", "Bcrypt", "TypeScript"],
         images: [
-          "https://picsum.photos/id/186/800/600",
-          "https://picsum.photos/id/187/800/600",
-          "https://picsum.photos/id/188/800/600"
+          "https://www.templateshub.net/uploads/1545118579%201544149615%20marazzo.webp",
+          "https://therichpost.com/wp-content/uploads/2021/03/Best-Reactjs-Ecommerce-Templates-Free.png",
+          "https://themefisher.com/blog/flipmart.webp"
         ],
         details: {
           client: "My Projects",
           date: "2024",
-          url: "https://ecommerce-backend.vercel.app/",
+          url: "https://github.com/AngelGaitanG/ecommerce",
           challenge: "Develop a robust and secure backend that allows managing all aspects of an ecommerce platform.",
           solution: "Implementation of a scalable architecture with authentication system, product and order management, and secure payment processing."
         }
@@ -621,13 +646,13 @@ export const englishData: PortfolioData = {
         id: 4,
         title: "Professional Portfolio",
         category: "web",
-        thumbnail: "https://picsum.photos/id/189/800/600",
+        thumbnail: "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735840611/portfolio/JPf-01-02-2025_02_55_PM_1_lgx0yp.png",
         description: "Professional portfolio developed for a client in the services sector, with minimalist design and focus on user experience. Includes dark mode, smooth animations, and integrated contact form.",
         technologies: ["Angular", "TypeScript", "SCSS"],
         images: [
-          "https://picsum.photos/id/189/800/600",
-          "https://picsum.photos/id/190/800/600",
-          "https://picsum.photos/id/191/800/600"
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735840610/portfolio/JPf-01-02-2025_02_55_PM_we0xqi.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735840610/portfolio/JPf-01-02-2025_02_54_PM_ujc3x4.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735840610/portfolio/JPf-01-02-2025_02_56_PM_ojr1ji.png"
         ],
         details: {
           client: "Jesus Madero",
@@ -637,37 +662,37 @@ export const englishData: PortfolioData = {
           solution: "Development of a single-page application with responsive design, implementing a modular architecture and reusable components. A content management system was integrated to facilitate updates and a contact form with real-time validation."
         }
       },
-      {
-        id: 5,
-        title: "Personal Page - Yazmin Villota",
-        category: "web",
-        thumbnail: "ruta-a-la-imagen",
-        description: "Personal website designed for an artist, focusing on the presentation of her pictorial and photographic work. Includes a blog to share artistic thoughts and experiences.",
-        technologies: ["Angular", "SCSS", "TypeScript"],
-        images: [
-          "https://picsum.photos/id/192/800/600",
-          "https://picsum.photos/id/193/800/600",
-          "https://picsum.photos/id/194/800/600"
-        ],
-        details: {
-          client: "Yazmin Villota - Artist",
-          date: "2024",
-          url: "https://yazminvillota.vercel.app/",
-          challenge: "Create a visually appealing platform that reflects the client's artistic style, allowing easy navigation between her art gallery and personal blog.",
-          solution: "Development of a website with a design inspired by Vincent van Gogh's art, using visual elements that complement the artist's works. A content management system was implemented to facilitate blog publishing and gallery updates."
-        }
-      },
+      // {
+      //   id: 5,
+      //   title: "Personal Page - Yazmin Villota",
+      //   category: "web",
+      //   thumbnail: "ruta-a-la-imagen",
+      //   description: "Personal website designed for an artist, focusing on the presentation of her pictorial and photographic work. Includes a blog to share artistic thoughts and experiences.",
+      //   technologies: ["Angular", "SCSS", "TypeScript"],
+      //   images: [
+      //     "https://picsum.photos/id/192/800/600",
+      //     "https://picsum.photos/id/193/800/600",
+      //     "https://picsum.photos/id/194/800/600"
+      //   ],
+      //   details: {
+      //     client: "Yazmin Villota - Artist",
+      //     date: "2024",
+      //     url: "https://yazminvillota.vercel.app/",
+      //     challenge: "Create a visually appealing platform that reflects the client's artistic style, allowing easy navigation between her art gallery and personal blog.",
+      //     solution: "Development of a website with a design inspired by Vincent van Gogh's art, using visual elements that complement the artist's works. A content management system was implemented to facilitate blog publishing and gallery updates."
+      //   }
+      // },
       {
         id: 6,
         title: "Dental Clinic Website",
         category: "web",
-        thumbnail: "https://picsum.photos/id/195/800/600",
+        thumbnail: "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735842116/portfolio/ArruaDentalClinic-01-02-2025_03_19_PM_o8a35q.png",
         description: "Website for a dental clinic, designed to offer clear information about services, medical team, and contact. Includes an online booking system and informative sections about treatments.",
         technologies: ["Angular", "SCSS", "TypeScript"],
         images: [
-          "https://picsum.photos/id/195/800/600",
-          "https://picsum.photos/id/196/800/600",
-          "https://picsum.photos/id/197/800/600"
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735842118/portfolio/ArruaDentalClinic-01-02-2025_03_20_PM_gio893.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735842116/portfolio/ArruaDentalClinic-01-02-2025_03_21_PM_fw8nhm.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1735842118/portfolio/ArruaDentalClinic-01-02-2025_03_20_PM_1_mmnjoc.png"
         ],
         details: {
           client: "My Projects",

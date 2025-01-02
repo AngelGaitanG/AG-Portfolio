@@ -26,6 +26,7 @@
 }
 
 .greeting {
+    color: #232323;
     font-family: $title-font;
     font-size: $font-size-h2;
     font-weight: 800;
@@ -36,6 +37,7 @@
     font-size: $font-size-h0;
     font-weight: 800;
     margin-top: 30px;
+    color: #232323;
     
     span {
         color: $primary-color;
@@ -53,6 +55,7 @@
     padding: 3px 10px;
     border-radius: 5px;
     margin-top: 5px;
+    color: #232323;
 }
 
 .description {
@@ -61,6 +64,7 @@
     line-height: 1.5;
     margin-top: 30px;
     max-width: 600px;
+    color: rgb(78, 78, 78);
 }
 
 button {

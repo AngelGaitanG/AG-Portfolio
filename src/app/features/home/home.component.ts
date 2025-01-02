@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { LanguageService } from '../../core/services/language.service';
 import { spanishData, englishData, PortfolioData } from '../../core/data/portfolio.data';
@@ -7,7 +7,7 @@ import { spanishData, englishData, PortfolioData } from '../../core/data/portfol
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink, CommonModule],
+  imports: [CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
