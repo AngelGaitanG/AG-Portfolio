@@ -36,7 +36,6 @@ export class HeaderComponent implements OnInit {
     this.router.events.subscribe((event) => {
       if(event instanceof NavigationEnd){
         const isHomeActive = this.router.url.startsWith('/home');
-        console.log(this.router.url, isHomeActive);
         this.homeActiveEvent.emit(isHomeActive);
       }
     })
