@@ -2,7 +2,6 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './features/home/home.component';
 import { AboutMeComponent } from './features/about-me/about-me.component';
 import { ResumeComponent } from './features/resume/resume.component';
-import { animation } from '@angular/animations';
 import { PortfolioComponent } from './features/portfolio/portfolio.component';
 import { TestimonialsComponent } from './features/testimonials/testimonials.component';
 import { ContactComponent } from './features/contact/contact.component';

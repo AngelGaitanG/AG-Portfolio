@@ -288,6 +288,28 @@ export const spanishData: PortfolioData = {
     },
     projects: [
       {
+        id: 0,
+        title: "TukiTasks",
+        category: "web",
+        thumbnail: "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1741540584/images/TukiTask-03-09-2025_02_14_PM_n49iuc.png",
+        description: "Aplicación Full Stack para gestión de tareas con sistema de autenticación y perfil de usuario",
+        technologies: ["Angular", "NodeJS", "Express", "PostgreSQL", "HTML", "CSS", "JavaScript", "Git", "Vercel", "NestJS", "JWT", "Bcrypt", "TypeScript", "Railway"],
+        images: [
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1741536346/images/TukiTask-03-08-2025_10_02_PM_ve6bh5.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1741536359/images/TukiTask-03-08-2025_10_06_PM_wyn6nv.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1741535440/images/TukiTask-03-09-2025_12_37_PM_oqohng.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1741535446/images/TukiTask-03-08-2025_10_13_PM_1_hdb0l6.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1741536359/images/TukiTask-03-08-2025_10_06_PM_wyn6nv.png"
+        ], 
+        details: {
+          client: "My Projects",
+          date: "2025-01-10",
+          url: "https://tukitasks.com.ar",
+          challenge: "Desarrollar una aplicación Full Stack para la gestión de tareas que permita a los usuarios crear, editar y eliminar tareas, así como ver el progreso de cada una. Tambien cuenta con un sistema de pomodoro para mejorar la productividad.",
+          solution: "Implementación de una arquitectura Full Stack con sistema de autenticación, gestión de perfiles de usuario y seguimiento de tareas en tiempo real. Notificaciones con websockets y envio de emails."
+        }
+      },
+      {
         id: 1,
         title: "Elecar Appoints Manager",
         category: "web",
@@ -463,49 +485,50 @@ export const englishData: PortfolioData = {
     title: 'RESUME',
     education: [
       {
-        year: '2018 - 2023',
-        title: 'Systems Engineering',
-        description: 'National University of Colombia',
+        year: '2019 - 2024',
+        title: 'MIMO - UNSL - SoyHenry',
+        description: 'University of San Luis and Web & Mobile Development Courses',
         achievements: [
-          'Top of class',
+          'Top class average',
           'Outstanding web development project',
-          'Participation in university hackathons'
+          'Participation in real web and mobile development projects'
         ]
       },
       {
         year: '2023',
-        title: 'AWS Developer Associate Certification',
-        description: 'Amazon Web Services',
+        title: 'English for IT B2 Certification',
+        description: 'English certification for IT professionals',
         achievements: [
-          'Cloud services specialization',
-          'Serverless architecture development',
-          'Implementation of scalable solutions'
+          'English certification for IT professionals',
         ]
       }
     ],
     experience: [
       {
-        year: '2022 - Present',
-        title: 'Senior Full Stack Developer',
-        company: 'Tech Solutions Inc.',
-        description: 'Development of enterprise web applications using Angular and NestJS',
+        year: 'JUN 2024 - AUG 2024',
+        title: 'Full Stack Developer',
+        company: 'El Plac',
+        description: 'Development of an application for managing clothing fairs',
         responsibilities: [
-          'Technical team leadership',
-          'Implementation of scalable architectures',
-          'Performance and SEO optimization',
-          'Mentoring junior developers'
+          'Developed the database and participated in API development',
+          'Was in charge of application deployment and container systems',
+          'Developed some API connections with the frontend and styling of components',
+          'Conducted unit and integration testing',
+          'Implemented notification system with websockets and email sending',
+          'Implemented authentication system with JWT',
         ]
       },
       {
-        year: '2020 - 2022',
-        title: 'Frontend Developer',
-        company: 'Digital Innovation Labs',
-        description: 'Development of modern and responsive user interfaces',
+        year: 'OCT 2024 - JAN 2025',
+        title: 'Full Stack Developer',
+        company: 'CARTA AI',
+        description: 'Development of microservices for the Carta AI application, and design of the application architecture',
         responsibilities: [
-          'Development of reusable components',
-          'RESTful APIs integration',
-          'Unit testing implementation',
-          'User experience optimization'
+          'Development of microservices for the Carta AI application',
+          'Design of many application components, such as chat, dashboard, user profile, forms, etc.',
+          'Development of backend and frontend connection',
+          'Development of the notifications part',
+          'Implementation of authentication and authorization',
         ]
       }
     ]
@@ -582,6 +605,28 @@ export const englishData: PortfolioData = {
       desktop: 'Ecommerce'
     },
     projects: [
+      {
+        id: 0,
+        title: "TukiTasks",
+        category: "web",
+        thumbnail: "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1741540584/images/TukiTask-03-09-2025_02_14_PM_n49iuc.png",
+        description: "Full Stack application for task management with authentication system and user profile",
+        technologies: ["Angular", "NodeJS", "Express", "PostgreSQL", "HTML", "CSS", "JavaScript", "Git", "Vercel", "NestJS", "JWT", "Bcrypt", "TypeScript", "Railway"],
+        images: [
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1741536346/images/TukiTask-03-08-2025_10_02_PM_ve6bh5.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1741536359/images/TukiTask-03-08-2025_10_06_PM_wyn6nv.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1741535440/images/TukiTask-03-09-2025_12_37_PM_oqohng.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1741535446/images/TukiTask-03-08-2025_10_13_PM_1_hdb0l6.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1741536359/images/TukiTask-03-08-2025_10_06_PM_wyn6nv.png"
+        ], 
+        details: {
+          client: "My Projects",
+          date: "2025-01-10",
+          url: "https://tukitasks.com.ar",
+          challenge: "Develop a Full Stack application for task management that allows users to create, edit, and delete tasks, as well as view the progress of each one. It also includes a pomodoro system to improve productivity.",
+          solution: "Implementation of a Full Stack architecture with authentication system, user profile management, and real-time task tracking. Notifications with websockets and email sending."
+        }
+      },
       {
         id: 1,
         title: "Elecar Appoints Manager",
