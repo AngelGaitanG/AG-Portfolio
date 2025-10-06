@@ -296,6 +296,28 @@ export const spanishData: PortfolioData = {
     },
     projects: [
       {
+        id: 1,
+        title: "Centro Odontológico Arrúa",
+        category: "web",
+        thumbnail: "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759768878/Captura_de_pantalla_2025-10-06_134053_cfhhn0.png",
+        description: "Landing page profesional para un centro odontológico, con enfoque en servicios, equipo médico y contacto directo.",
+        technologies: ["Angular", "TypeScript", "HTML", "SCSS", "Figma", "Vercel"],
+        images: [
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759768758/Centro-Odontol%C3%B3gico-Arr%C3%BAa-Cl%C3%ADnica-Dental-en-Argentina-10-06-2025_01_36_PM_2_fcf8l4.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759768758/Centro-Odontol%C3%B3gico-Arr%C3%BAa-Cl%C3%ADnica-Dental-en-Argentina-10-06-2025_01_36_PM_sbivqz.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759768758/Centro-Odontol%C3%B3gico-Arr%C3%BAa-Cl%C3%ADnica-Dental-en-Argentina-10-06-2025_01_36_PM_1_qz9ggq.png",
+
+        ],
+        details: {
+          client: "Centro Odontológico Arrúa",
+          date: "2024-07-08",
+          url: "https://centroarrua.com.ar",
+          challenge: "Diseñar y desarrollar una página web moderna, confiable y clara que refleje la identidad profesional del centro odontológico, destacando sus servicios y facilitando el contacto con pacientes.",
+          solution: "Se creó una landing page totalmente responsive con un diseño limpio y profesional, utilizando Angular para el desarrollo y Figma para el diseño visual. La página resalta los servicios, el equipo profesional y permite una comunicación directa con la clínica."
+        }
+      }
+      ,
+      {
           id: 1,
           title: "Streets",
           category: "mobile",
@@ -315,7 +337,7 @@ export const spanishData: PortfolioData = {
           details: {
             client: "My Projects",
             date: "2025-03-31",
-            url: "https://streetsapp.vercel.app",
+            url: "https://streets-one.vercel.app/",
             challenge: "Crear una aplicación móvil con estilo urbano y nocturno, que funcione como red social para entusiastas del automovilismo, con mapas, chat, eventos y perfiles personalizados.",
             solution: "Diseñada en Figma y desarrollada con Ionic y Angular, Streets integra Mapbox para la navegación, NgRx y RxJS para la gestión de estado y comunicación en tiempo real, además de un sistema de chat y exploración de eventos automovilísticos."
           }
@@ -648,6 +670,52 @@ export const englishData: PortfolioData = {
       desktop: 'Ecommerce'
     },
     projects: [
+      {
+        id: 1,
+        title: "Centro Odontológico Arrúa",
+        category: "web",
+        thumbnail: "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759768878/Captura_de_pantalla_2025-10-06_134053_cfhhn0.png",
+        description: "Professional landing page for a dental center, focused on services, medical team, and direct contact.",
+        technologies: ["Angular", "TypeScript", "HTML", "SCSS", "Figma", "Vercel"],
+        images: [
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759768758/Centro-Odontol%C3%B3gico-Arr%C3%BAa-Cl%C3%ADnica-Dental-en-Argentina-10-06-2025_01_36_PM_2_fcf8l4.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759768758/Centro-Odontol%C3%B3gico-Arr%C3%BAa-Cl%C3%ADnica-Dental-en-Argentina-10-06-2025_01_36_PM_sbivqz.png",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759768758/Centro-Odontol%C3%B3gico-Arr%C3%BAa-Cl%C3%ADnica-Dental-en-Argentina-10-06-2025_01_36_PM_1_qz9ggq.png"
+        ],
+        details: {
+          client: "Centro Odontológico Arrúa",
+          date: "2024-07-08",
+          url: "https://centroarrua.com.ar",
+          challenge: "Design and develop a modern, reliable, and clear website that reflects the professional identity of the dental center, highlighting its services and facilitating communication with patients.",
+          solution: "A fully responsive landing page was created with a clean and professional design, built with Angular for the frontend and designed in Figma. The site highlights services, professional staff, and enables direct contact with the clinic."
+        }
+      },
+      {
+        id: 2,
+        title: "Streets",
+        category: "mobile",
+        thumbnail: "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759764079/Screenshot_20251006_121910_Streets2_yxep2w.jpg",
+        description: "Mobile application inspired by Need for Speed Underground — a social network for car enthusiasts and the nighttime automotive scene.",
+        technologies: ["Ionic", "Angular", "Mapbox", "Figma", "ChatGPT", "NgRx", "RxJS", "TypeScript", "Android Studio"],
+        images: [
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759762877/Screenshot_20251006_115205_Streets_b8cxvf.jpg",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759762877/Screenshot_20251006_115217_Streets_mxwvyh.jpg",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759762877/Screenshot_20251006_115332_Streets_xcichy.jpg",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759762876/Screenshot_20251006_115155_Streets_gdjqut.jpg",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759762876/Screenshot_20251006_115123_Streets_bkzyq5.jpg",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759762876/Screenshot_20251006_115316_Streets_vgctbd.jpg",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759762876/Screenshot_20251006_115253_Streets_hh6m5m.jpg",
+          "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759764005/Screenshot_20251006_121910_Streets_jmjdo5.jpg"
+        ],
+        details: {
+          client: "My Projects",
+          date: "2025-03-31",
+          url: "https://streets-one.vercel.app/",
+          challenge: "Build a mobile app with an urban and night-style aesthetic that serves as a social platform for car enthusiasts, featuring maps, chat, events, and personal profiles.",
+          solution: "Designed in Figma and developed with Ionic and Angular, Streets integrates Mapbox for navigation, NgRx and RxJS for state management and real-time communication, and includes chat and event exploration features for the automotive community."
+        }
+      }
+      ,
       {
         id: 0,
         title: "TukiTasks",
