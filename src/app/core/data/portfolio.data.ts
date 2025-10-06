@@ -201,7 +201,7 @@ export const spanishData: PortfolioData = {
         ]
       },
       {
-        year: 'OCT 2024 - ENE 2025',
+        year: 'OCT 2024 - AGO 2025',
         title: 'Desarrollador Full Stack',
         company: 'CARTA AI',
         description: 'Desarrollo de microservicios para la aplicación de Carta AI, y diseño de la arquitectura de la aplicación',
@@ -212,7 +212,32 @@ export const spanishData: PortfolioData = {
           'Desarrollo de la parte de notificaciones',
           'Implementación de autenticación y autorización',
         ]
-      }
+      },
+      {
+  year: 'AUG 2025',
+  title: 'Desarrollador Full Stack',
+  company: 'Nicolás Fernández',
+  description: 'Implementación de un trigger en Airtable para automatizar el envío de información de tareas a grupos de WhatsApp según las necesidades del cliente.',
+  responsibilities: [
+    'Configuración y desarrollo del trigger en Airtable para automatizar notificaciones de tareas',
+    'Integración de la base de datos con WhatsApp para el envío automático de mensajes',
+    'Pruebas y ajustes para asegurar que los mensajes se envíen correctamente según las condiciones establecidas'
+  ]
+},
+{
+  year: 'AUG 2025 - SEP 2025',
+  title: 'Desarrollador Frontend / Full Stack',
+  company: 'Centro Odontológico Arrúa',
+  description: 'Diseño y desarrollo de una landing page profesional con toda la información de la clínica y un sistema de pedidos de turnos para los pacientes.',
+  responsibilities: [
+    'Diseño de la landing page con enfoque en experiencia de usuario y accesibilidad',
+    'Desarrollo frontend utilizando Angular y SCSS',
+    'Implementación del sistema de pedidos de turnos online',
+    'Optimización del sitio para dispositivos móviles y desktop',
+    'Integración de formularios de contacto y comunicación con la clínica'
+  ]
+}
+
     ]
   },
   contact: {
@@ -575,7 +600,7 @@ export const englishData: PortfolioData = {
         ]
       },
       {
-        year: 'OCT 2024 - JAN 2025',
+        year: 'OCT 2024 - AUG 2025',
         title: 'Full Stack Developer',
         company: 'CARTA AI',
         description: 'Development of microservices for the Carta AI application, and design of the application architecture',
@@ -586,7 +611,32 @@ export const englishData: PortfolioData = {
           'Development of the notifications part',
           'Implementation of authentication and authorization',
         ]
-      }
+      },
+      {
+  year: 'AUG 2025',
+  title: 'Full Stack Developer',
+  company: 'Nicolás Fernández',
+  description: 'Implemented an Airtable trigger to automate task information delivery to WhatsApp groups according to client needs.',
+  responsibilities: [
+    'Configured and developed the Airtable trigger to automate task notifications',
+    'Integrated the database with WhatsApp for automatic message sending',
+    'Tested and adjusted the system to ensure messages were sent correctly under the specified conditions'
+  ]
+},
+{
+  year: 'AUG 2025 - SEP 2025',
+  title: 'Frontend / Full Stack Developer',
+  company: 'Centro Odontológico Arrúa',
+  description: 'Designed and developed a professional landing page with complete clinic information and an online appointment booking system for patients.',
+  responsibilities: [
+    'Designed the landing page focusing on user experience and accessibility',
+    'Developed frontend using Angular and SCSS',
+    'Implemented the online appointment booking system',
+    'Optimized the site for both mobile and desktop devices',
+    'Integrated contact forms and direct communication with the clinic'
+  ]
+}
+
     ]
   },
   contact: {

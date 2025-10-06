@@ -23,7 +23,7 @@
         <div class="experience-section">
             <h2>Experience</h2>
             <div class="timeline">
-                <div class="timeline-item" *ngFor="let exp of data.experience">
+                <div class="timeline-item" *ngFor="let exp of data.experience.slice().reverse()">
                     <div class="year">{{ exp.year }}</div>
                     <div class="content">
                         <h3>{{ exp.title }}</h3>
