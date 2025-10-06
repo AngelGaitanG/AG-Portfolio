@@ -296,6 +296,32 @@ export const spanishData: PortfolioData = {
     },
     projects: [
       {
+          id: 1,
+          title: "Streets",
+          category: "mobile",
+          thumbnail: "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759764079/Screenshot_20251006_121910_Streets2_yxep2w.jpg",
+          description: "Aplicación móvil inspirada en Need for Speed Underground, una red social dedicada a los amantes del mundo automotor nocturno.",
+          technologies: ["Ionic", "Angular", "Mapbox", "Figma", "ChatGPT", "NgRx", "RxJS", "TypeScript", "Android Studio"],
+          images: [
+            "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759762877/Screenshot_20251006_115205_Streets_b8cxvf.jpg",
+            "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759762877/Screenshot_20251006_115217_Streets_mxwvyh.jpg",
+            "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759762877/Screenshot_20251006_115332_Streets_xcichy.jpg",
+            "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759762876/Screenshot_20251006_115155_Streets_gdjqut.jpg",
+            "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759762876/Screenshot_20251006_115123_Streets_bkzyq5.jpg",
+            "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759762876/Screenshot_20251006_115316_Streets_vgctbd.jpg",
+            "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759762876/Screenshot_20251006_115253_Streets_hh6m5m.jpg",
+            "https://res.cloudinary.com/dkdsfv4ov/image/upload/v1759764005/Screenshot_20251006_121910_Streets_jmjdo5.jpg"
+          ],
+          details: {
+            client: "My Projects",
+            date: "2025-03-31",
+            url: "https://streetsapp.vercel.app",
+            challenge: "Crear una aplicación móvil con estilo urbano y nocturno, que funcione como red social para entusiastas del automovilismo, con mapas, chat, eventos y perfiles personalizados.",
+            solution: "Diseñada en Figma y desarrollada con Ionic y Angular, Streets integra Mapbox para la navegación, NgRx y RxJS para la gestión de estado y comunicación en tiempo real, además de un sistema de chat y exploración de eventos automovilísticos."
+          }
+        }
+        ,
+      {
         id: 0,
         title: "TukiTasks",
         category: "web",
