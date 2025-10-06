@@ -275,6 +275,7 @@
 @media (max-width: 480px) {
     .portfolio {
         padding: 10px;
+        padding-top: 20px;
 
         .title {
             font-size: $font-size-h3;
@@ -303,7 +304,8 @@
         }
 
         .pagination {
-            padding-bottom: 70px;
+            padding-bottom: 80px;
+        top: 260px;
         }
     }
 }

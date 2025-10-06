@@ -242,42 +242,50 @@ export const spanishData: PortfolioData = {
     }
   },
   testimonials: {
-    title: 'TESTIMONIOS',
-    items: [
-      {
-        image: 'https://randomuser.me/api/portraits/men/1.jpg',
-        rating: 5,
-        name: 'Juan Pérez',
-        title: 'CEO - Tech Solutions',
-        text: 'Excelente profesional. Entregó el proyecto antes de tiempo y con una calidad excepcional. Su atención al detalle y capacidad para entender nuestras necesidades fue sobresaliente.',
-        date: '15/03/2024'
-      },
-      {
-        image: 'https://randomuser.me/api/portraits/women/1.jpg',
-        rating: 5,
-        name: 'María García',
-        title: 'Directora de Marketing - Digital Innovation',
-        text: 'Un desarrollador muy talentoso y comprometido. Supo implementar exactamente lo que necesitábamos y siempre estuvo disponible para hacer ajustes.',
-        date: '10/03/2024'
-      },
-      {
-        image: 'https://randomuser.me/api/portraits/men/2.jpg',
-        rating: 4,
-        name: 'Carlos Rodríguez',
-        title: 'CTO - StartupX',
-        text: 'Gran experiencia trabajando juntos. Demostró un profundo conocimiento técnico y excelentes habilidades de comunicación.',
-        date: '01/03/2024'
-      },
-      {
-        image: 'https://randomuser.me/api/portraits/women/2.jpg',
-        rating: 5,
-        name: 'Ana Martínez',
-        title: 'Product Owner - InnovaTech',
-        text: 'Profesional altamente recomendable. Su capacidad para resolver problemas y proponer soluciones innovadoras fue clave para el éxito de nuestro proyecto.',
-        date: '20/02/2024'
-      }
-    ]
-  },
+  title: 'TESTIMONIOS',
+  items: [
+    {
+      image: 'https://media.istockphoto.com/id/2062236772/vector/default-avatar-profile-icon-grey-photo-placeholder-female-no-photo-images-for-unfilled-user.jpg?s=612x612&w=0&k=20&c=k89Udc50y4K9hik9ZYBDz0gVsCzSeXgPcTRBN5aPy94=',
+      rating: 5,
+      name: 'Salma Calista',
+      title: 'Profesora de ingles',
+      text: 'Trabajamos en mi página personal, con biografía y un blog donde puedo escribir mis diarios. Angel finalizó el trabajo antes de lo previsto y logró un diseño realmente hermoso. ¡Superó mis expectativas!',
+      date: '10/9/2025'
+    },
+    {
+      image: 'https://media.istockphoto.com/id/1327592506/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=612x612&w=0&k=20&c=BpR0FVaEa5F24GIw7K8nMWiiGmbb8qmhfkpXcp1dhQg=',
+      rating: 5,
+      name: 'Nicolás Fernández',
+      title: 'Director - Athenea',
+      text: 'Desarrolló una solución tecnológica innovadora que mejoró notablemente la comunicación interna de nuestra empresa. Ahora cada estado o situación se refleja automáticamente en nuestros grupos de WhatsApp. Un trabajo excelente.',
+      date: '15/08/2025'
+    },
+    {
+      image: 'https://media.istockphoto.com/id/1327592506/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=612x612&w=0&k=20&c=BpR0FVaEa5F24GIw7K8nMWiiGmbb8qmhfkpXcp1dhQg=',
+      rating: 4.5,
+      name: 'Jesús Madero',
+      title: 'Escritor Freelance',
+      text: 'Angel desarrolló mi portafolio web con una velocidad increíble y un diseño que no había pedido, pero que terminó siendo exactamente lo que necesitaba. Profesional y creativo.',
+      date: '18/12/2024'
+    },
+    {
+      image: 'https://media.istockphoto.com/id/2062236772/vector/default-avatar-profile-icon-grey-photo-placeholder-female-no-photo-images-for-unfilled-user.jpg?s=612x612&w=0&k=20&c=k89Udc50y4K9hik9ZYBDz0gVsCzSeXgPcTRBN5aPy94=',
+      rating: 5,
+      name: 'Clínica Arrúa',
+      title: 'Centro Odontológico',
+      text: 'Logró una paleta de colores perfecta para nuestra identidad, con un diseño adaptable, moderno y a un valor muy accesible. En poco tiempo creó un sitio web informativo ideal para la clínica.',
+      date: '30/08/2025'
+    },
+    {
+      image: 'https://media.istockphoto.com/id/1327592506/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=612x612&w=0&k=20&c=BpR0FVaEa5F24GIw7K8nMWiiGmbb8qmhfkpXcp1dhQg=',
+      rating: 5,
+      name: 'Sergio Tableda',
+      title: 'CEO - Agiliza360',
+      text: 'Angel se adaptó rápidamente a nuestro equipo y aprendió en poco tiempo a manejar nuestras tecnologías de frontend, evolucionando hasta convertirse en un excelente desarrollador full stack. Muy talentoso y comprometido.',
+      date: '20/07/2025'
+    }
+  ]
+},
   portfolio: {
     title: 'PORTAFOLIO',
     categories: {
@@ -560,42 +568,51 @@ export const englishData: PortfolioData = {
     }
   },
   testimonials: {
-    title: 'TESTIMONIALS',
-    items: [
-      {
-        image: 'https://randomuser.me/api/portraits/men/1.jpg',
-        rating: 5,
-        name: 'John Smith',
-        title: 'CEO - Tech Solutions',
-        text: 'Excellent professional. Delivered the project ahead of schedule with exceptional quality. His attention to detail and ability to understand our needs was outstanding.',
-        date: '03/15/2024'
-      },
-      {
-        image: 'https://randomuser.me/api/portraits/women/1.jpg',
-        rating: 5,
-        name: 'Mary Johnson',
-        title: 'Marketing Director - Digital Innovation',
-        text: 'A very talented and committed developer. He knew how to implement exactly what we needed and was always available for adjustments.',
-        date: '03/10/2024'
-      },
-      {
-        image: 'https://randomuser.me/api/portraits/men/2.jpg',
-        rating: 4,
-        name: 'Charles Wilson',
-        title: 'CTO - StartupX',
-        text: 'Great experience working together. Demonstrated deep technical knowledge and excellent communication skills.',
-        date: '03/01/2024'
-      },
-      {
-        image: 'https://randomuser.me/api/portraits/women/2.jpg',
-        rating: 5,
-        name: 'Anna Brown',
-        title: 'Product Owner - InnovaTech',
-        text: 'Highly recommended professional. His ability to solve problems and propose innovative solutions was key to the success of our project.',
-        date: '02/20/2024'
-      }
-    ]
-  },
+  title: 'TESTIMONIALS',
+  items: [
+    {
+      image: 'https://media.istockphoto.com/id/2062236772/vector/default-avatar-profile-icon-grey-photo-placeholder-female-no-photo-images-for-unfilled-user.jpg?s=612x612&w=0&k=20&c=k89Udc50y4K9hik9ZYBDz0gVsCzSeXgPcTRBN5aPy94=',
+      rating: 5,
+      name: 'Salma Calista',
+      title: 'English Teacher',
+      text: 'We worked on my personal website, featuring a biography and a blog where I can write my journals. Angel finished the project ahead of schedule and achieved a truly beautiful design. He exceeded my expectations!',
+      date: '09/10/2025'
+    },
+    {
+      image: 'https://media.istockphoto.com/id/1327592506/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=612x612&w=0&k=20&c=BpR0FVaEa5F24GIw7K8nMWiiGmbb8qmhfkpXcp1dhQg=',
+      rating: 5,
+      name: 'Nicolás Fernández',
+      title: 'Director - Athenea',
+      text: 'He developed an innovative technological solution that significantly improved our company’s internal communication. Now every status or situation is automatically reflected in our WhatsApp groups. Excellent work.',
+      date: '08/15/2025'
+    },
+    {
+      image: 'https://media.istockphoto.com/id/1327592506/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=612x612&w=0&k=20&c=BpR0FVaEa5F24GIw7K8nMWiiGmbb8qmhfkpXcp1dhQg=',
+      rating: 4.5,
+      name: 'Jesús Madero',
+      title: 'Freelance Writer',
+      text: 'Angel built my personal portfolio website incredibly fast, with a design I hadn’t asked for but turned out to be exactly what I needed. Professional and creative.',
+      date: '12/18/2024'
+    },
+    {
+      image: 'https://media.istockphoto.com/id/2062236772/vector/default-avatar-profile-icon-grey-photo-placeholder-female-no-photo-images-for-unfilled-user.jpg?s=612x612&w=0&k=20&c=k89Udc50y4K9hik9ZYBDz0gVsCzSeXgPcTRBN5aPy94=',
+      rating: 5,
+      name: 'Clínica Arrúa',
+      title: 'Dental Center',
+      text: 'He created a color palette perfectly matching our identity, with a modern and adaptable design at a very affordable cost. In a short time, he delivered an informative website ideal for our clinic.',
+      date: '08/30/2025'
+    },
+    {
+      image: 'https://media.istockphoto.com/id/1327592506/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=612x612&w=0&k=20&c=BpR0FVaEa5F24GIw7K8nMWiiGmbb8qmhfkpXcp1dhQg=',
+      rating: 5,
+      name: 'Sergio Tableda',
+      title: 'CEO - Agiliza360',
+      text: 'Angel quickly adapted to our team and learned our frontend technologies in record time, eventually performing as a skilled full-stack developer. Very talented and dedicated.',
+      date: '07/20/2025'
+    }
+  ]
+}
+,
   portfolio: {
     title: 'PORTFOLIO',
     categories: {

@@ -251,22 +251,30 @@
 
 // Móviles
 @media (max-width: 480px) {
-    .about-me {
-        padding: 10px;
 
+    :host {  height:  auto;}
+    .about-me {
+        padding: 15px;
+        margin-top: 20px;
+        padding-bottom: 60px;
+        
         .title {
             font-size: $font-size-h3;
             letter-spacing: 4px;
         }
-
+        .subtitle {
+            text-align: center;
+        }
+        
         .description {
             p {
-                font-size: 14px;
+                font-size: 16px;
             }
         }
 
         .row {
             .square-container {
+                height: auto;
                 .square {
                     height: 120px;
                     
@@ -283,16 +291,27 @@
             .what-i-do {
                 .title-wid {
                     font-size: $font-size-h6;
+                    color: rgb(78, 78, 78);
                 }
 
                 .wid-container {
                     .wid-card {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: .5rem;
                         .colum-wid {
+                            text-align: center;
                             h4 {
+                color: rgb(78, 78, 78);
+
                                 font-size: 14px;
                             }
                             p {
-                                font-size: 12px;
+                color: rgb(78, 78, 78);
+
+                                text-align:  start;
+                                font-size: 14px;
                             }
                         }
                     }
