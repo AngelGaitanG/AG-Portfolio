@@ -69,13 +69,14 @@ export class ContactComponent {
       this.submitStatus = null;
 
       try {
-        await emailjs.send(
+       await emailjs.send(
           'service_9t9lu9b',     
           'template_zzoc5b5',    
           {
             from_name: this.contactForm.value.name,
             from_email: this.contactForm.value.email,
             message: this.contactForm.value.message,
+            reply_to: this.contactForm.value.email, // <--- agregar esto
           }
         );
 
@@ -93,8 +94,8 @@ export class ContactComponent {
   get nameError(): string {
     const control = this.contactForm.get('name');
     if (control?.errors && control.touched) {
-      if (control.errors['required']) return this.data.form.errors?.nameRequired || 'El nombre es requerido';
-      if (control.errors['minlength']) return this.data.form.errors?.nameMinLength || 'El nombre debe tener al menos 2 caracteres';
+      if (control.errors['required']) return this.data.form.errors?.nameRequired || 'Name is required';
+      if (control.errors['minlength']) return this.data.form.errors?.nameMinLength || 'The name must have at least 2 characters';
     }
     return '';
   }
@@ -102,8 +103,8 @@ export class ContactComponent {
   get emailError(): string {
     const control = this.contactForm.get('email');
     if (control?.errors && control.touched) {
-      if (control.errors['required']) return this.data.form.errors?.emailRequired || 'El email es requerido';
-      if (control.errors['email']) return this.data.form.errors?.emailInvalid || 'El email no es válido';
+      if (control.errors['required']) return this.data.form.errors?.emailRequired || 'Email es required';
+      if (control.errors['email']) return this.data.form.errors?.emailInvalid || 'Email is not valid';
     }
     return '';
   }
@@ -111,8 +112,8 @@ export class ContactComponent {
   get messageError(): string {
     const control = this.contactForm.get('message');
     if (control?.errors && control.touched) {
-      if (control.errors['required']) return this.data.form.errors?.messageRequired || 'El mensaje es requerido';
-      if (control.errors['minlength']) return this.data.form.errors?.messageMinLength || 'El mensaje debe tener al menos 10 caracteres';
+      if (control.errors['required']) return this.data.form.errors?.messageRequired || 'Name is required';
+      if (control.errors['minlength']) return this.data.form.errors?.messageMinLength || 'The message must be at least 10 characters.';
     }
     return '';
   }
