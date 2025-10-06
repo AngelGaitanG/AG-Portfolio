@@ -310,7 +310,7 @@ export const spanishData: PortfolioData = {
         ],
         details: {
           client: "Centro Odontológico Arrúa",
-          date: "2024-07-08",
+          date: "2024-08-15",
           url: "https://centroarrua.com.ar",
           challenge: "Diseñar y desarrollar una página web moderna, confiable y clara que refleje la identidad profesional del centro odontológico, destacando sus servicios y facilitando el contacto con pacientes.",
           solution: "Se creó una landing page totalmente responsive con un diseño limpio y profesional, utilizando Angular para el desarrollo y Figma para el diseño visual. La página resalta los servicios, el equipo profesional y permite una comunicación directa con la clínica."
@@ -684,7 +684,7 @@ export const englishData: PortfolioData = {
         ],
         details: {
           client: "Centro Odontológico Arrúa",
-          date: "2024-07-08",
+          date: "2025-08-15",
           url: "https://centroarrua.com.ar",
           challenge: "Design and develop a modern, reliable, and clear website that reflects the professional identity of the dental center, highlighting its services and facilitating communication with patients.",
           solution: "A fully responsive landing page was created with a clean and professional design, built with Angular for the frontend and designed in Figma. The site highlights services, professional staff, and enables direct contact with the clinic."
